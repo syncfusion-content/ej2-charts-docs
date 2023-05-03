@@ -436,60 +436,6 @@ Initialize the grid with datasource.
 
 By using the grid’s `actionComplete` event and `getCurrentViewRecords` method, you can get the current page records. By using the grid’s `databound` event, you can update the current page records into the chart’s datasource and visualize the grid data in chart.
 
-{% tab template= "chart/grid-visual" %}
-
-```ts
-import { Grid, Selection, Page,  ActionEventArgs } from '@syncfusion/ej2-grids';
-import { Query, DataManager } from '@syncfusion/ej2-data';
-import { orderData } from './datasource.ts';
-import { Chart, ColumnSeries, DateTime } from '@syncfusion/ej2-charts';
-Chart.Inject(ColumnSeries, DateTime);
-Grid.Inject(Selection,Page);
-    let chart: Chart;
-    let data: Object = new DataManager(orderData as JSON[]).executeLocal(new Query().take(100));
-    let grid: Grid = new Grid(
-        {
-            dataSource: data,
-            allowPaging: true,
-            pageSettings: { pageSize: 10 },
-            columns: [
-                { field: 'OrderDate', headerText: 'Order Date', width: 130, format: 'yMd', textAlign: 'right' },
-                { field: 'Freight', width: 120, format: 'C2', textAlign: 'right' }
-            ],
-        dataBound: () => {
-        chart = new Chart({
-            //Initializing Primary X Axis
-            primaryXAxis: {
-            valueType: 'DateTime',
-            },
-            series: [
-            {
-                type: 'Column',
-                dataSource: grid.getCurrentViewRecords(),
-                xName: 'OrderDate', width: 2, marker: {
-                    visible: true,
-                    width: 10,
-                    height: 10
-                },
-                yName: 'Freight', name: 'Germany',
-            },
-        ],
-        width:'650px',
-        height: '350px'
-          });
-          chart.appendTo('#Chart');
-        },
-         actionComplete: (args: ActionEventArgs) => {
-                if (args.requestType === 'paging') {
-                 chart.series[0].dataSource =  grid.getCurrentViewRecords();
-                   chart.refresh();
-                }
-        });
-    grid.appendTo('#Grid');
-```
-
-{%endtab%}
-
 ## Show percentage value in pie tooltip
 
 By using the [`tooltipRender`](https://ej2.syncfusion.com/documentation/api/accumulation-chart/iAccTooltipRenderEventArgs/) event, you can show the percentage value for each point of pie series in tooltip.
@@ -499,46 +445,3 @@ To show the percentage value in pie tooltip, follow the given steps:
 **Step 1**:
 
 By using the [`tooltipRender`](https://ej2.syncfusion.com/documentation/api/accumulation-chart/iAccTooltipRenderEventArgs/) event, you can get the `args.point.y` and `args.series.sumOfPoints` values. You can use these values to calculate the percentage value for each point of pie series. To display the percentage value in tooltip, use the `args.content` property.
-
-{% tab template= "chart/how-to" %}
-
-```ts
-import {
-    AccumulationTheme, AccumulationChart, AccumulationLegend, PieSeries, AccumulationTooltip, IAccTooltipRenderEventArgs,
-    AccumulationDataLabel
-} from '@syncfusion/ej2-charts';
-AccumulationChart.Inject(AccumulationLegend, PieSeries, AccumulationTooltip, AccumulationDataLabel);
-let pie: AccumulationChart = new AccumulationChart({
-        // Initialize the chart series
-    series: [
-            {
-                dataSource: [
-                    { 'x': 'Chrome', y: 37 }, { 'x': 'UC Browser', y: 17 },
-                    { 'x': 'iPhone', y: 19 }, { 'x': 'Others', y: 4, text: '4%' }, { 'x': 'Opera', y: 11 }
-                ],
-                dataLabel:{
-                  visible:true
-                },
-                radius: '70%', xName: 'x',
-                yName: 'y', startAngle: 0,
-                endAngle: 360, innerRadius: '0%'
-            }
-        ],
-        enableSmartLabels: true,
-        legendSettings: {
-            visible: false,
-        },
-        // Initialize tht tooltip
-        tooltip: { enable: true },
-        title: 'Mobile Browser Statistics',
-         tooltipRender: (args: IAccTooltipRenderEventArgs) => {
-           let value  = args.point.y / args.series.sumOfPoints * 100;
-           args.text = args.point.x + '' + Math.ceil(value) + '' + '%';
-        },
-        width:'650px',
-        height: '350px'
-    });
-    pie.appendTo('#element');
-```
-
-{%endtab%}
