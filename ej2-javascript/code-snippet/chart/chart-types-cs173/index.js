@@ -42,7 +42,7 @@ var chart = new ej.charts.Chart({
                 width: 2,
                 fill: '#F7523F'
             },
-            cornerRadius: { topLeft: Browser.isDevice ? 4 : 6, topRight: Browser.isDevice ? 4 : 6 }
+            cornerRadius: { topLeft: ej.base.Browser.isDevice ? 4 : 6, topRight: ej.base.Browser.isDevice ? 4 : 6 }
         }
     ],
     width: ej.base.Browser.isDevice ? '100%' : '75%',
