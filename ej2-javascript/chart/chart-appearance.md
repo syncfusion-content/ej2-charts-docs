@@ -333,7 +333,7 @@ Chart can be given a title using [`title`](../api/chart/#title-string) property,
 
 ### Position and Alignment
 
-By using the `position` property, you can position the `title` at left, right, top or bottom of the chart. The title is positioned at the top of the chart, by default.
+By using the `position` property in `titleStyle`, you can position the [`title`](../api/chart/#title-string) at left, right, top or bottom of the chart. The title is positioned at the top of the chart, by default.
 
 {% if page.publishingplatform == "typescript" %}
 
