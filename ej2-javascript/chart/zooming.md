@@ -151,7 +151,7 @@ Using [`enablePan`](../api/chart/zoomSettingsModel/) property you can able to pa
 
 ## Enable Scrollbar
 
-Using `enableScrollbar` property, you can able to add scrollbar for zoomed chart. Using this scrollbar, you can pan or zoom the chart.
+Using the [`enableScrollbar`](../api/chart/zoomSettingsModel/#enablescrollbar) property, you can add a scrollbar to a zoomed chart. This scrollbar allows you to pan or zoom the chart. The appearance of the scrollbar can be customized using properties in [`scrollbarSettings`](../api/chart/scrollbarSettings/). For example, you can use `trackColor` and `trackRadius` properties to customize the track of the scrollbar, and `scrollbarRadius` and `scrollbarColor` properties to customize the scroller. The ability to zoom through the scrollbar can be enabled or disabled using the `enableZoom` property in [`scrollbarSettings`](../api/chart/scrollbarSettings/). Additionally, you can change the color of the grip and height of the scrollbar using the `gripColor` and `height` properties.
 
 {% if page.publishingplatform == "typescript" %}
 
