@@ -50,7 +50,7 @@ Markers can be added to points by enabling the [`visible`](../api/chart/markerS
 
 ## Shape
 
-Markers can be assigned with different shapes such as Rectangle, Circle, Diamond etc. using the [`shape`](../api/chart/markerSettings/#shape) property.
+Markers can be assigned with different shapes such as Rectangle, Circle, Diamond, etc. using the [`shape`](../api/chart/markerSettings/#shape) property.
 
 {% if page.publishingplatform == "typescript" %}
 
