@@ -112,7 +112,7 @@ By default, the tooltip is positioned at the left of the stock chart. You can mo
 {% previewsample "page.domainurl/code-snippet/stock-chart/getting-started-cs37" %}
 {% endif %}
 
-## Customize the appearance of tooltip
+## Customize the appearance of the tooltip
 
 The [`fill`](../api/chart/tooltipSettingsModel/#fill) and [`border`](../api/chart/tooltipSettingsModel/#border) properties are used to customize the background color and border of the tooltip respectively. The [`textStyle`](../api/chart/tooltipSettingsModel/#textStyle) property in the tooltip is used to customize the font of the tooltip text.
 
