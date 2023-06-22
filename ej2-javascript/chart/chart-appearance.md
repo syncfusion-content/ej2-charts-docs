@@ -331,7 +331,7 @@ Chart can be given a title using [`title`](../api/chart/#title-string) property,
 {% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs15" %}
 {% endif %}
 
-### Position and alignment
+### Title position
 
 By using the [`position`](../api/chart/titleSettings/#position) property in [`titleStyle`](../api/chart/#titlestyle), you can position the [`title`](../api/chart/#title-string) at left, right, top or bottom of the chart. The title is positioned at the top of the chart, by default.
 
@@ -391,7 +391,7 @@ Custom position helps you to position the title anywhere in the chart using [`x`
 {% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs22" %}
 {% endif %}
 
-**Title Alignment**
+### Title alignment
 
 You can align the title to the center, far, or near of the chart using the [`textAlignment`](../api/chart/titleSettings/#textalignment) property.
 
@@ -422,7 +422,7 @@ You can align the title to the center, far, or near of the chart using the [`tex
 {% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs23" %}
 {% endif %}
 
-**Title wrap**
+### Title wrap
 
 The `textStyle` property of chart title provides options to customize the `size`, `color`, `fontFamily`, `fontWeight`, `fontStyle`, `opacity`, `textAlignment` and `textOverflow`.
 
