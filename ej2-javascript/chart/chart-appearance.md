@@ -331,7 +331,7 @@ Chart can be given a title using [`title`](../api/chart/#title-string) property,
 {% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs15" %}
 {% endif %}
 
-### Position and Alignment
+### Position and alignment
 
 By using the [`position`](../api/chart/titleSettings/#position) property in [`titleStyle`](../api/chart/#titlestyle), you can position the [`title`](../api/chart/#title-string) at left, right, top or bottom of the chart. The title is positioned at the top of the chart, by default.
 
