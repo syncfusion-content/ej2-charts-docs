@@ -83,7 +83,7 @@ By default, tooltip shows information of x and y value in points. In addition to
 
 ## Position the tooltip
 
-By default, the tooltip is positioned at the left of the stock chart. You can move the tooltip along with the mouse by setting **Nearest** to [`position`](../api/stock-chart/stockTooltipSettings/#position) property.
+By default, the tooltip is positioned at the left side of the stock chart. You can move the tooltip along with the mouse by setting **Nearest** to the [`position`](../api/stock-chart/stockTooltipSettings/#position) property.
 
 {% if page.publishingplatform == "typescript" %}
 
