@@ -74,7 +74,7 @@ The pareto line series can be customized by using the [`marker`](../api/chart/pa
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs173" %}
 {% endif %}
 
-## See Also
+## See also
 
 * [Data label](../data-labels/)
 * [Tooltip](../tool-tip/)
