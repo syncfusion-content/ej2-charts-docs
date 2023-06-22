@@ -333,7 +333,7 @@ Chart can be given a title using [`title`](../api/chart/#title-string) property,
 
 ### Position and Alignment
 
-By using the `position` property in `titleStyle`, you can position the [`title`](../api/chart/#title-string) at left, right, top or bottom of the chart. The title is positioned at the top of the chart, by default.
+By using the [`position`](../api/chart/titleSettings/#position) property in [`titleStyle`](../api/chart/#titlestyle), you can position the [`title`](../api/chart/#title-string) at left, right, top or bottom of the chart. The title is positioned at the top of the chart, by default.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -362,7 +362,7 @@ By using the `position` property in `titleStyle`, you can position the [`title
 {% previewsample "page.domainurl/code-snippet/chart/chart-appearance-cs21" %}
 {% endif %}
 
-Custom position helps you to position the title anywhere in the chart using `x`, `y` coordinates.
+Custom position helps you to position the title anywhere in the chart using [`x`](../api/chart/titleSettings/#x), [`y`](../api/chart/titleSettings/#y) coordinates.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -393,7 +393,7 @@ Custom position helps you to position the title anywhere in the chart using `x`,
 
 **Title Alignment**
 
-You can align the title to the center, far, or near of the chart using the [`textAlignment`](../api/chart/font/#textalignment) property.
+You can align the title to the center, far, or near of the chart using the [`textAlignment`](../api/chart/titleSettings/#textalignment) property.
 
 {% if page.publishingplatform == "typescript" %}
 

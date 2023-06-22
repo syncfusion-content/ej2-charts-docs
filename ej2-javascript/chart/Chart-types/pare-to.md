@@ -45,7 +45,7 @@ The initial values are represented by column chart and the cumulative values are
 
 ## Pareto customization
 
-The pareto line series can be customized by using the `marker`, `width`, `dashArray`, and `fill` properties in the paretoOptions. The secondary axis for the pareto series can be shown or hidden using the `showAxis` property.
+The pareto line series can be customized by using the [`marker`](../api/chart/paretoOptions/#marker), [`width`](../api/chart/paretoOptions/#width), [`dashArray`](../api/chart/paretoOptions/#dasharray), and [`fill`](../api/chart/paretoOptions/#fill) properties in the paretoOptions. The secondary axis for the pareto series can be shown or hidden using the [`showAxis`](../api/chart/paretoOptions/#showaxis) property.
 
 {% if page.publishingplatform == "typescript" %}
 
