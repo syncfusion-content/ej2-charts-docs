@@ -137,8 +137,8 @@ Any HTML element can be displayed in the tooltip by using the `template` propert
 
 ## Customization
 
-The [`fill`](../api/chart/tooltipSettingsModel/#fill) and [`border`](../api/chart/tooltipSettingsModel/#border) properties are used to customize the background color and border of the tooltip respectively. The [`textStyle`](../api/chart/tooltipSettingsModel/#textstyle)
-property in the tooltip is used to customize the font of the tooltip text. The [`highlightColor`](../api/accumulation-chart/accumulationChartModel/#highlightcolor) property can be used to change the color of the data point when hovering.
+The [`fill`](https://ej2.syncfusion.com/javascript/documentation/api/chart/tooltipSettingsModel/#fill) and [`border`](https://ej2.syncfusion.com/javascript/documentation/api/chart/tooltipSettingsModel/#border) properties are used to customize the background color and border of the tooltip respectively. The [`textStyle`](https://ej2.syncfusion.com/javascript/documentation/api/chart/tooltipSettingsModel/#textstyle)
+property in the tooltip is used to customize the font of the tooltip text. The [`highlightColor`](https://ej2.syncfusion.com/javascript/documentation/api/accumulation-chart/accumulationChartModel/#highlightcolor) property can be used to change the color of the data point when hovering.
 
 {% if page.publishingplatform == "typescript" %}
 

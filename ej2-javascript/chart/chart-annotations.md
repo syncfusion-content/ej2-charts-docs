@@ -15,7 +15,7 @@ Annotations are used to mark the specific area of interest in the chart area wit
 
 <!-- markdownlint-disable MD033 -->
 
-You can add annotations to the chart by using the <code>annotations</code> option. By using the [`content`](../api/chart/chartAnnotationSettingsModel/#content-string) option of annotation object, you can specify either the id of the element or directly specify the element in the content that needs to be displayed in the chart area.
+You can add annotations to the chart by using the <code>annotations</code> option. By using the [`content`](https://helpej2.syncfusion.com/documentation/api/chart/chartAnnotationSettingsModel/#content-string) option of annotation object, you can specify either the id of the element or directly specify the element in the content that needs to be displayed in the chart area.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -172,5 +172,5 @@ By setting text div in the `content` option of annotation object you can add sub
 
 ## See Also
 
-* [Show total stacking values in data label](../chart/how-to/stacking-total/#show-the-total-value-for-stacking-series-in-data-label)
-* [Create footer and watermark for chart](../chart/how-to/footer/#create-footer-and-watermark-for-chart)
+* [Show total stacking values in data label](https://helpej2.syncfusion.com/documentation/chart/how-to/stacking-total#show-the-total-value-for-stacking-series-in-data-label)
+* [Create footer and watermark for chart](https://helpej2.syncfusion.com/documentation/chart/how-to/footer#create-footer-and-watermark-for-chart)

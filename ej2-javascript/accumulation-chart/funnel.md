@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Funnel in ##Platform_Name## Accumulation chart control
 
-To render a funnel series, use the series [`type`](../api/accumulation-chart/accumulationSeriesModel/) as `Funnel` and inject, the `FunnelSeries` module using the `AccumulationChart.Inject(FunnelSeries)` method.
+To render a funnel series, use the series [`type`](https://helpej2.syncfusion.com/documentation/api/accumulation-chart/accumulationSeriesModel/) as `Funnel` and inject, the `FunnelSeries` module using the `AccumulationChart.Inject(FunnelSeries)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -228,5 +228,5 @@ Individual points can be customized using the `pointRender` event.
 
 ## See Also
 
-* [Data label](./data-label/)
-* [Grouping](./grouping/)
+* [Data label](https://helpej2.syncfusion.com/documentation/accumulation-chart/data-label)
+* [Grouping](https://helpej2.syncfusion.com/documentation/accumulation-chart/grouping)
