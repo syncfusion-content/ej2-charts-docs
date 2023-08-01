@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## Pie Chart
 
-To render a pie series, use the series [`type`](../api/accumulation-chart/accumulationSeriesModel/#type) as `Pie` and inject the `PieSeries` module using `AccumulationChart.Inject(PieSeries)` method. If the `PieSeries` module is not injected, this module will be loaded by default.
+To render a pie series, use the series [`type`](https://ej2.syncfusion.com/documentation/api/accumulation-chart/accumulationSeriesModel/#type) as `Pie` and inject the `PieSeries` module using `AccumulationChart.Inject(PieSeries)` method. If the `PieSeries` module is not injected, this module will be loaded by default.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,7 +44,7 @@ To render a pie series, use the series [`type`](../api/accumulation-chart/accumu
 
 ## Radius Customization
 
-By default, radius of the pie series will be 80% of the size (minimum of chart width and height). You can customize this using [`radius`](../api/accumulation-chart/accumulationSeriesModel/#radius) property of the series.
+By default, radius of the pie series will be 80% of the size (minimum of chart width and height). You can customize this using [`radius`](https://ej2.syncfusion.com/documentation/api/accumulation-chart/accumulationSeriesModel/#radius) property of the series.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -75,7 +75,7 @@ By default, radius of the pie series will be 80% of the size (minimum of chart w
 
 ## Pie Center
 
-The center position of the pie can be changed by Center X and Center Y. By default, center value of the pie series x and y is 50%. You can customize this using [`center`](../api/accumulation-chart/accumulationChartModel/#center) property of the series.
+The center position of the pie can be changed by Center X and Center Y. By default, center value of the pie series x and y is 50%. You can customize this using [`center`](https://ej2.syncfusion.com/documentation/api/accumulation-chart/accumulationChartModel/#center) property of the series.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -106,7 +106,7 @@ The center position of the pie can be changed by Center X and Center Y. By defau
 
 ## Various Radius Pie Chart
 
-You can use radius mapping to render the slice with different [`radius`](../api/accumulation-chart/accumulationSeries/#radius) pie and also use [`border`](../api/accumulation-chart/accumulationSeries/#border) , fill properties to customize the point. dataLabel is used to represent individual data and its value.
+You can use radius mapping to render the slice with different [`radius`](https://ej2.syncfusion.com/documentation/api/accumulation-chart/accumulationSeries/#radius) pie and also use [`border`](https://ej2.syncfusion.com/documentation/api/accumulation-chart/accumulationSeries/#border) , fill properties to customize the point. dataLabel is used to represent individual data and its value.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -137,7 +137,7 @@ You can use radius mapping to render the slice with different [`radius`](../api/
 
 ## Doughnut Chart
 
-To achieve a doughnut in pie series, customize the [`innerRadius`](../api/accumulation-chart/accumulationSeries/#innerradius) property of the series. By setting value greater than 0%, a doughnut will appear. The `innerRadius` property takes value from 0% to 100% of the pie radius.
+To achieve a doughnut in pie series, customize the [`innerRadius`](https://ej2.syncfusion.com/documentation/api/accumulation-chart/accumulationSeries/#innerradius) property of the series. By setting value greater than 0%, a doughnut will appear. The `innerRadius` property takes value from 0% to 100% of the pie radius.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -168,7 +168,7 @@ To achieve a doughnut in pie series, customize the [`innerRadius`](../api/accumu
 
 ## Start and End angles
 
-You can customize the start and end angle of the pie series using the [`startAngle`](../api/accumulation-chart/accumulationSeries/#startangle) and [`endAngle`](../api/accumulation-chart/accumulationSeries/#endangle) properties. The default value of  `startAngle` is 0 degree, and `endAngle` is 360 degrees. By customizing this, you can achieve a semi pie series.
+You can customize the start and end angle of the pie series using the [`startAngle`](https://ej2.syncfusion.com/documentation/api/accumulation-chart/accumulationSeries/#startangle) and [`endAngle`](https://ej2.syncfusion.com/documentation/api/accumulation-chart/accumulationSeries/#endangle) properties. The default value of  `startAngle` is 0 degree, and `endAngle` is 360 degrees. By customizing this, you can achieve a semi pie series.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -292,9 +292,9 @@ By default, the border will appear in the pie/doughnut chart while mouse hover o
 
 ## Multi-level pie chart
 
-You can achieve a multi-level drill down in pie and doughnut charts using [pointClick](../../api/accumulation-chart/accumulationChartModel/#pointclick) event. If user clicks any point in the chart, that corresponding data will be shown in the next level and so on based on point clicked.
+You can achieve a multi-level drill down in pie and doughnut charts using [pointClick](https://helpej2.syncfusion.com/documentation/api/accumulation-chart/#pointclick) event. If user clicks any point in the chart, that corresponding data will be shown in the next level and so on based on point clicked.
 
-You can also achieve drill-up (back to the initial state) by using [chartMouseClick](../../api/accumulation-chart/accumulationChartModel/#chartmouseclick) event. In below sample, you can drill-up by clicking back button in the center of the chart.
+You can also achieve drill-up (back to the initial state) by using [chartMouseClick](https://helpej2.syncfusion.com/documentation/api/accumulation-chart/#chartmouseclick) event. In below sample, you can drill-up by clicking back button in the center of the chart.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -325,5 +325,5 @@ You can also achieve drill-up (back to the initial state) by using [chartMouseCl
 
 ## See Also
 
-* [Data label](./data-label/)
-* [Grouping](./grouping/)
+* [Data label](https://helpej2.syncfusion.com/documentation/accumulation-chart/data-label)
+* [Grouping](https://helpej2.syncfusion.com/documentation/accumulation-chart/grouping)

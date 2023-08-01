@@ -53,7 +53,7 @@ Chart can render to its container size. You can set the size via inline or CSS a
 
 <!-- markdownlint-disable MD036 -->
 
-You can also set size for chart directly through [`width`](../api/chart/#width-string) and [`height`](../api/chart/#height-string) properties.
+You can also set size for chart directly through [`width`](https://helpej2.syncfusion.com/documentation/api/chart/#width-string) and [`height`](https://helpej2.syncfusion.com/documentation/api/chart/#height-string) properties.
 
 **In Pixel**
 
