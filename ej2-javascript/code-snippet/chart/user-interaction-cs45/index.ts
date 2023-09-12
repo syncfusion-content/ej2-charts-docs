@@ -1,7 +1,7 @@
 import { Chart, AreaSeries, LineSeries, DateTime, DataLabel, Tooltip, Highlight, Crosshair, Zoom, ZoomSettings, IZoomCompleteEventArgs, Legend, Selection, ISelectionCompleteEventArgs, IMouseEventArgs, ITooltipRenderEventArgs, ILegendClickEventArgs } from '@syncfusion/ej2-charts';
 Chart.Inject(AreaSeries, LineSeries, DataLabel, DateTime, Tooltip, Zoom, Highlight, Legend, Selection, Crosshair);
 import { Browser } from '@syncfusion/ej2-base';
-import { synchronizedData } from './financial-data';
+import { synchronizedData } from './datasource.ts';
 import { Axis } from '@syncfusion/ej2/charts';
 
 let charts: Chart[] = [];
