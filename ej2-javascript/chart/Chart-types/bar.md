@@ -103,6 +103,37 @@ You can use the [`groupName`](../../api/chart/seriesModel/#groupname) property t
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs79" %}
 {% endif %}
 
+## Cylindrical chart
+
+To render a cylindrical chart, set the [`columnFacet`] property as `Cylinder` in the chart series along with the series type.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs175/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs175/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs175" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs175/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs175/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs175" %}
+{% endif %}
+
 ## Series customization
 
 The following properties can be used to customize the `bar` series.
@@ -139,7 +170,7 @@ The following properties can be used to customize the `bar` series.
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs80" %}
 {% endif %}
 
-## See Also
+## See also
 
 * [Data label](../data-labels/)
 * [Tooltip](../tool-tip/)

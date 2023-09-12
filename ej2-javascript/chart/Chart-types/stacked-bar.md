@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 ---
 # Stacked bar in ##Platform_Name## Chart control
 
-## 100% Stacked Bar
+## 100% Stacked bar
 
 To render a [100% stacked bar](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/100-stacked-bar-chart) series, use series [`type`](../../api/chart/seriesModel/#type-string) as `StackingBar100` and inject `StackingBarSeries` module using `Chart.Inject(StackingBarSeries)` method.
 
@@ -39,6 +39,37 @@ To render a [100% stacked bar](https://www.syncfusion.com/javascript-ui-controls
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs147" %}
+{% endif %}
+
+## Cylindrical chart
+
+To render a cylindrical chart, set the [`columnFacet`] property as `Cylinder` in the chart series along with the series type.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs179/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs179/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs179" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs179/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs179/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs179" %}
 {% endif %}
 
 ## Series customization
@@ -77,7 +108,7 @@ The following properties can be used to customize the `100% stacked column` seri
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs148" %}
 {% endif %}
 
-## See Also
+## See also
 
 * [Data label](../data-labels/)
 * [Tooltip](../tool-tip/)

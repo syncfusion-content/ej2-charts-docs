@@ -41,7 +41,7 @@ To render a stacked bar series, use series [`type`](../../api/chart/seriesModel/
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs137" %}
 {% endif %}
 
-## Stacking Group
+## Stacking group
 
 You can use the [`stackingGroup`](../../api/chart/series/#stackinggroup-string) property to group the stacked bar and 100% stacked bar. Columns with same group name are stacked on top of each other.
 
@@ -70,6 +70,37 @@ You can use the [`stackingGroup`](../../api/chart/series/#stackinggroup-string) 
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs138" %}
+{% endif %}
+
+## Cylindrical chart
+
+To render a cylindrical chart, set the [`columnFacet`] property as `Cylinder` in the chart series along with the series type.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs177/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs177/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs177" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs177/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs177/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs177" %}
 {% endif %}
 
 ## Series customization
@@ -108,7 +139,7 @@ The following properties can be used to customize the `stacked bar` series.
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs139" %}
 {% endif %}
 
-## See Also
+## See also
 
 * [Data label](../data-labels/)
 * [Tooltip](../tool-tip/)

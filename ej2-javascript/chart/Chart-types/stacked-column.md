@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 ---
 # Stacked column in ##Platform_Name## Chart control
 
-## 100% Stacked Column
+## 100% Stacked column
 
 To render a [100% stacked column](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/100-stacked-column-chart) series, use series [`type`](../../api/chart/seriesModel/#type-string) as `StackingColumn100` and inject `StackingColumnSeries` module using `Chart.Inject(StackingColumnSeries)` method.
 
@@ -39,6 +39,37 @@ To render a [100% stacked column](https://www.syncfusion.com/javascript-ui-contr
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs149" %}
+{% endif %}
+
+## Cylindrical chart
+
+To render a cylindrical chart, set the [`columnFacet`] property as `Cylinder` in the chart series along with the series type.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs178/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs178/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs178" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs178/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs178/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs178" %}
 {% endif %}
 
 ## Series customization
@@ -77,7 +108,7 @@ The following properties can be used to customize the `column` series.
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs150" %}
 {% endif %}
 
-## See Also
+## See also
 
 * [Data label](../data-labels/)
 * [Tooltip](../tool-tip/)
