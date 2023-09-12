@@ -43,7 +43,7 @@ To render a [100% stacked bar](https://www.syncfusion.com/javascript-ui-controls
 
 ## Cylindrical chart
 
-To render a cylindrical chart, set the [`columnFacet`] property as `Cylinder` in the chart series along with the series type.
+To render a cylindrical 100% stacked bar chart, set the `columnFacet` property to `Cylinder` in the chart series.
 
 {% if page.publishingplatform == "typescript" %}
 

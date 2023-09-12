@@ -118,7 +118,7 @@ Initially, render more than one chart to export, and then add button to export t
 
 ## Adding header and footer in PDF export
 
-You can customize text, page number, line, page size and changing orientation in header and footer.
+The PDF export option allows you to include a header and footer in the exported chart, where you can add text.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -180,7 +180,7 @@ The rendered chart can be exported to `XLSX` or `CSV` format using the excel exp
 
 ## Exporting charts into multiple page
 
-You can export the multiple charts in multiple page by passing the multiple chart objects in the export method of chart.
+You can export charts from the web page onto multiple pages within a PDF document.
 
 {% if page.publishingplatform == "typescript" %}
 

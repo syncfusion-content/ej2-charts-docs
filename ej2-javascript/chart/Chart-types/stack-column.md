@@ -75,7 +75,7 @@ Columns with same group name are stacked on top of each other.
 
 ## Cylindrical chart
 
-To render a cylindrical chart, set the [`columnFacet`] property as `Cylinder` in the chart series along with the series type.
+To render a cylindrical stacked column chart, set the `columnFacet` property to `Cylinder` in the chart series.
 
 {% if page.publishingplatform == "typescript" %}
 
