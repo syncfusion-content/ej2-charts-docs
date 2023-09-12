@@ -28,7 +28,7 @@ var chart = new ej.charts.Chart({
 
     series: [
         {
-            type: 'Line', dataSource: window.synchronizedData, xName: 'USD', width: 2, yName: 'EUR', emptyPointSettings: { mode: 'Drop' }
+            type: 'Line', dataSource: synchronizedData, xName: 'USD', width: 2, yName: 'EUR', emptyPointSettings: { mode: 'Drop' }
         }
     ],
     zoomSettings: {
@@ -102,7 +102,7 @@ var chart1 = new ej.charts.Chart({
     chartArea: { border: { width: 0 } },
     series: [
         {
-            type: 'Area', dataSource: window.synchronizedData, xName: 'USD', width: 2, yName: 'INR', opacity: 0.6, border: { width: 2 }
+            type: 'Area', dataSource: synchronizedData, xName: 'USD', width: 2, yName: 'INR', opacity: 0.6, border: { width: 2 }
         }
     ],
     zoomSettings: {
