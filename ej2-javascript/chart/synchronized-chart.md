@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Synchronized Charts in ##Platform_Name## Chart control
 
-## Synchronized Charts
+## Synchronized charts
 
 This sample showcases the synchronization of multiple charts, with crosshair, tooltip, and zooming functionalities synchronized across the charts. Hover over or zoom in on one chart to observe the corresponding impact on the other charts as well.
 
