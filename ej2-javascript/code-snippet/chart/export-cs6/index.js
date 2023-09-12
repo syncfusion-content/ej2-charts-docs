@@ -98,6 +98,6 @@ var pie = new ej.charts.AccumulationChart({
     title: 'Project Cost Breakdown'
 }, '#element2');
 document.getElementById('print').onclick = () => {
-    chart.exportModule.export('SVG', 'Chart', null, [chart, chart1, pie], null, null, true, undefined, undefined, true);
+    chart.exportModule.export('PDF', 'Chart', null, [chart, chart1, pie], null, null, true, undefined, undefined, true);
 };
 
