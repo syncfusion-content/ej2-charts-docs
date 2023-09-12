@@ -1,7 +1,8 @@
-import { Chart, AreaSeries, LineSeries, DateTime, DataLabel, Tooltip, Legend, IMouseEventArgs, ITooltipRenderEventArgs, ILegendClickEventArgs } from '@syncfusion/ej2-charts';
-Chart.Inject(AreaSeries, LineSeries, DataLabel, DateTime, Tooltip, Legend);
+import { Chart, AreaSeries, SplineSeries, DateTime, DataLabel, Crosshair, Legend, IMouseEventArgs, ITooltipRenderEventArgs, ILegendClickEventArgs } from '@syncfusion/ej2-charts';
+Chart.Inject(AreaSeries, SplineSeries, DataLabel, DateTime, Legend, Crosshair);
 import { Browser } from '@syncfusion/ej2-base';
 import { synchronizedData } from './datasource.ts';
+import { Axis } from '@syncfusion/ej2/charts';
 
 let charts: Chart[] = [];
 
@@ -30,26 +31,26 @@ let chart: Chart = new Chart({
 
     series: [
         {
-            type: 'Line', dataSource: synchronizedData, xName: 'USD', width: 2, yName: 'EUR', emptyPointSettings: { mode: 'Drop' }
+            type: 'Spline', dataSource: synchronizedData, xName: 'USD', width: 2, yName: 'EUR', emptyPointSettings: { mode: 'Drop' }
         }
     ],
     chartMouseLeave: (args: IMouseEventArgs) => {
-        chart1.hideTooltip();
+        chart1.hideCrosshair();
     },
     chartMouseMove: (args: IMouseEventArgs) => {
         if ((!Browser.isDevice && !chart.isTouch && !chart.isChartDrag) || chart.startMove) {
             chart1.startMove = chart.startMove;
-            chart1.showTooltip(args.x, args.y);
+            chart1.showCrosshair(args.x, args.y);
         }
     },
     chartMouseUp: function (args: IMouseEventArgs) {
         if (Browser.isDevice && chart.startMove) {
-            chart1.hideTooltip();
+            chart1.hideCrosshair();
         }
     },
     title: 'US to EURO',
     titleStyle: { textAlignment: 'Near' },
-    tooltip: { enable: true, fadeOutDuration: Browser.isDevice ? 2500 : 1000, shared: true, header: '', format: '<b>€${point.y}</b> <br> ${point.x} 2023', enableMarker: false },
+    crosshair: { enable: true, lineType: 'Vertical', dashArray: '2,2' }
 });
 chart.appendTo('#container1');
 charts.push(chart);
@@ -83,20 +84,20 @@ let chart1: Chart = new Chart({
     chartMouseMove: (args: IMouseEventArgs) => {
         if (!Browser.isDevice || chart1.startMove) {
             chart.startMove = chart1.startMove;
-            chart.showTooltip(args.x, args.y);
+            chart.showCrosshair(args.x, args.y);
         }
     },
     chartMouseLeave: (args: IMouseEventArgs) => {
-        chart.hideTooltip();
+        chart.hideCrosshair();
     },
     chartMouseUp: function (args: IMouseEventArgs) {
         if ((!Browser.isDevice && !chart1.isTouch && !chart1.isChartDrag) || chart1.startMove) {
-            chart.hideTooltip();
+            chart.hideCrosshair();
         }
     },
     title: 'US to INR',
     titleStyle: { textAlignment: 'Near' },
-    tooltip: { enable: true, fadeOutDuration: Browser.isDevice ? 2500 : 1000, shared: true, header: '', format: '<b>₹${point.y}</b> <br> ${point.x} 2023', enableMarker: false },
+    crosshair: { enable: true, lineType: 'Vertical', dashArray: '2,2' }
 });
 chart1.appendTo('#container2');
 charts.push(chart1);

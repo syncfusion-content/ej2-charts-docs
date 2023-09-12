@@ -25,26 +25,26 @@ var chart = new ej.charts.Chart({
 
     series: [
         {
-            type: 'Line', dataSource: synchronizedData, xName: 'USD', width: 2, yName: 'EUR', emptyPointSettings: { mode: 'Drop' }
+            type: 'Spline', dataSource: synchronizedData, xName: 'USD', width: 2, yName: 'EUR', emptyPointSettings: { mode: 'Drop' }
         }
     ],
     chartMouseLeave: function (args) {
-        chart1.hideTooltip();
+        chart1.hideCrosshair();
     },
     chartMouseMove: function (args) {
         if ((!ej.base.Browser.isDevice && !chart.isTouch && !chart.isChartDrag) || chart.startMove) {
             chart1.startMove = chart.startMove;
-            chart1.showTooltip(args.x, args.y);
+            chart1.showCrosshair(args.x, args.y);
         }
     },
     chartMouseUp: function (args) {
         if (ej.base.Browser.isDevice && chart.startMove) {
-            chart1.hideTooltip();
+            chart1.hideCrosshair();
         }
     },
     title: 'US to EURO',
     titleStyle: { textAlignment: 'Near' },
-    tooltip: { enable: true, fadeOutDuration: ej.base.Browser.isDevice ? 2500 : 1000, shared: true, header: '', format: '<b>€${point.y}</b> <br> ${point.x} 2023', enableMarker: false },
+    crosshair: { enable: true, lineType: 'Vertical', dashArray: '2,2' }
 });
 chart.appendTo('#container1');
 charts.push(chart);
@@ -78,20 +78,20 @@ var chart1 = new ej.charts.Chart({
     chartMouseMove: function (args) {
         if ((!ej.base.Browser.isDevice && !chart1.isTouch && !chart1.isChartDrag) || chart1.startMove) {
             chart.startMove = chart1.startMove;
-            chart.showTooltip(args.x, args.y);
+            chart.showCrosshair(args.x, args.y);
         }
     },
     chartMouseLeave: function (args) {
-        chart.hideTooltip();
+        chart.hideCrosshair();
     },
     chartMouseUp: function (args) {
         if (ej.base.Browser.isDevice && chart4.startMove) {
-            chart.hideTooltip();
+            chart.hideCrosshair();
         }
     },
     title: 'US to INR',
     titleStyle: { textAlignment: 'Near' },
-    tooltip: { enable: true, fadeOutDuration: ej.base.Browser.isDevice ? 2500 : 1000, shared: true, header: '', format: '<b>₹${point.y}</b> <br> ${point.x} 2023', enableMarker: false },
+    crosshair: { enable: true, lineType: 'Vertical', dashArray: '2,2' },
 });
 chart1.appendTo('#container2');
 charts.push(chart1);

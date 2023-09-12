@@ -1,4 +1,6 @@
 var charts = [];
+var zoomFactor = 0;
+var zoomPosition = 0;
 
 var chart = new ej.charts.Chart({
     primaryXAxis: {
@@ -28,23 +30,25 @@ var chart = new ej.charts.Chart({
             type: 'Line', dataSource: synchronizedData, xName: 'USD', width: 2, yName: 'EUR', emptyPointSettings: { mode: 'Drop' }
         }
     ],
-    chartMouseLeave: function (args) {
-        chart1.hideTooltip();
+    zoomSettings: {
+        enableMouseWheelZooming: true,
+        enablePinchZooming: true,
+        enableScrollbar: false,
+        enableDeferredZooming: false,
+        enableSelectionZooming: true,
+        enablePan: true,
+        mode: 'X',
+        toolbarItems: ['Pan', 'Reset']
     },
-    chartMouseMove: function (args) {
-        if ((!ej.base.Browser.isDevice && !chart.isTouch && !chart.isChartDrag) || chart.startMove) {
-            chart1.startMove = chart.startMove;
-            chart1.showTooltip(args.x, args.y);
-        }
-    },
-    chartMouseUp: function (args) {
-        if (ej.base.Browser.isDevice && chart.startMove) {
-            chart1.hideTooltip();
+    zoomComplete: function (args) {
+        if (args.axis.name === 'primaryXAxis') {
+            zoomFactor = args.currentZoomFactor;
+            zoomPosition = args.currentZoomPosition;
+            zoomCompleteFunction(args);
         }
     },
     title: 'US to EURO',
-    titleStyle: { textAlignment: 'Near' },
-    tooltip: { enable: true, fadeOutDuration: ej.base.Browser.isDevice ? 2500 : 1000, shared: true, header: '', format: '<b>€${point.y}</b> <br> ${point.x} 2023', enableMarker: false },
+    titleStyle: { textAlignment: 'Near' }
 });
 chart.appendTo('#container1');
 charts.push(chart);
@@ -72,26 +76,39 @@ var chart1 = new ej.charts.Chart({
     chartArea: { border: { width: 0 } },
     series: [
         {
-            type: 'Area', dataSource: synchronizedData, xName: 'USD', width: 2, yName: 'INR', opacity: 0.6, border: { width: 2 }
+            type: 'SplineArea', dataSource: synchronizedData, xName: 'USD', width: 2, yName: 'INR', opacity: 0.6, border: { width: 2 }
         }
     ],
-    chartMouseMove: function (args) {
-        if ((!ej.base.Browser.isDevice && !chart1.isTouch && !chart1.isChartDrag) || chart1.startMove) {
-            chart.startMove = chart1.startMove;
-            chart.showTooltip(args.x, args.y);
-        }
+    zoomSettings: {
+        enableMouseWheelZooming: true,
+        enablePinchZooming: true,
+        enableScrollbar: false,
+        enableDeferredZooming: false,
+        enableSelectionZooming: true,
+        enablePan: true,
+        mode: 'X',
+        toolbarItems: ['Pan', 'Reset']
     },
-    chartMouseLeave: function (args) {
-        chart.hideTooltip();
-    },
-    chartMouseUp: function (args) {
-        if (ej.base.Browser.isDevice && chart4.startMove) {
-            chart.hideTooltip();
+    zoomComplete: function (args) {
+        if (args.axis.name === 'primaryXAxis') {
+            zoomFactor = args.currentZoomFactor;
+            zoomPosition = args.currentZoomPosition;
+            zoomCompleteFunction(args);
         }
     },
     title: 'US to INR',
-    titleStyle: { textAlignment: 'Near' },
-    tooltip: { enable: true, fadeOutDuration: ej.base.Browser.isDevice ? 2500 : 1000, shared: true, header: '', format: '<b>₹${point.y}</b> <br> ${point.x} 2023', enableMarker: false },
+    titleStyle: { textAlignment: 'Near' }
 });
 chart1.appendTo('#container2');
 charts.push(chart1);
+
+function zoomCompleteFunction(args) {
+    for (var i = 0; i < charts.length; i++) {
+        if (args.axis.series[0].chart.element.id !== charts[i].element.id) {
+            charts[i].primaryXAxis.zoomFactor = zoomFactor;
+            charts[i].primaryXAxis.zoomPosition = zoomPosition;
+            charts[i].zoomModule.isZoomed = args.axis.series[0].chart.zoomModule.isZoomed;
+            charts[i].zoomModule.isPanning = args.axis.series[0].chart.zoomModule.isPanning;
+        }
+    }
+}
