@@ -120,8 +120,8 @@ Initially, render more than one chart to export, and then add button to export t
 
 In the export method, specify the following parameters to add a header and footer to the exported PDF document:
 
-* `header` - In the header, we can specify the text that is to appear at the top of the exported PDF.
-* `footer` - In the footer, we can specify the text that is to appear at the bottom of the exported PDF.
+* `header` - Specify the text that should appear at the top of the exported PDF.
+* `footer` - Specify the text that should appear at the bottom of the exported PDF.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -156,8 +156,8 @@ You can export the rendered chart data to `XLSX` or `CSV` formats using the expo
 
 In the export method, you'll need to specify the following parameters in order to export the data to Excel:
 
-* `type` - You can specify a type, which can be either `XLSX` or `CSV` format, for exporting in Excel.
-* `fileName` - You can specify a name for the exported documents.
+* `type` - Specify the export format as either `XLSX` or `CSV` for exporting in Excel.
+* `fileName` - A name for the exported file.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -190,7 +190,7 @@ In the export method, you'll need to specify the following parameters in order t
 
 In the export method, specify the following parameter to export charts to multiple pages in a PDF format.
 
-* `exportToMultiplePage` - You can enable `exportToMultiplePage` to export each chart on an individual page.
+* `exportToMultiplePage` - Set `exportToMultiplePage` to true in order to export each chart on an individual page.
 
 {% if page.publishingplatform == "typescript" %}
 
