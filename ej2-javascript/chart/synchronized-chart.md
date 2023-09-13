@@ -53,8 +53,8 @@ Synchronize the crosshair across multiple charts using the `showCrosshair` and `
 
 In the `showCrosshair` method, specify the following parameter programmatically to enable crosshairs for a particular chart:
 
-* `x` - Specifies the x value of the point or x-coordinate.
-* `y` - Specifies the y value of the point or y-coordinate.
+* `x` - Specifies the x-value of the point or x-coordinate.
+* `y` - Specifies the y-value of the point or y-coordinate.
 
 {% if page.publishingplatform == "typescript" %}
 
