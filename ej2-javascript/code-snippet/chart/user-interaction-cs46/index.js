@@ -85,7 +85,7 @@ var chart1 = new ej.charts.Chart({
         chart.hideCrosshair();
     },
     chartMouseUp: function (args) {
-        if (ej.base.Browser.isDevice && chart4.startMove) {
+        if (ej.base.Browser.isDevice && chart1.startMove) {
             chart.hideCrosshair();
         }
     },

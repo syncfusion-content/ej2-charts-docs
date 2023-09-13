@@ -82,7 +82,7 @@ let chart1: Chart = new Chart({
         }
     ],
     chartMouseMove: (args: IMouseEventArgs) => {
-        if (!Browser.isDevice || chart1.startMove) {
+        if ((!Browser.isDevice && !chart1.isTouch && !chart1.isChartDrag) || chart1.startMove) {
             chart.startMove = chart1.startMove;
             chart.showCrosshair(args.x, args.y);
         }
@@ -91,7 +91,7 @@ let chart1: Chart = new Chart({
         chart.hideCrosshair();
     },
     chartMouseUp: function (args: IMouseEventArgs) {
-        if ((!Browser.isDevice && !chart1.isTouch && !chart1.isChartDrag) || chart1.startMove) {
+        if (Browser.isDevice || chart1.startMove) {
             chart.hideCrosshair();
         }
     },
