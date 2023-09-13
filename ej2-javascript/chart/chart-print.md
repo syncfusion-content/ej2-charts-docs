@@ -190,7 +190,7 @@ In the export method, you'll need to specify the following parameters in order t
 
 In the export method, specify the following parameter to export charts to multiple pages in a PDF format.
 
-* `exportToMultiplePage` - Set `exportToMultiplePage` to true in order to export each chart on an individual page.
+* `exportToMultiplePage` - Set `exportToMultiplePage` to **true** in order to export each chart on an individual page.
 
 {% if page.publishingplatform == "typescript" %}
 
