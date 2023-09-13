@@ -118,7 +118,10 @@ Initially, render more than one chart to export, and then add button to export t
 
 ## Adding header and footer in PDF export
 
-The PDF export option allows you to include a header and footer in the exported chart, where you can add text.
+In the export method, specify the following parameters to add a header and footer to the exported PDF document:
+
+* `header` - In the header, we can specify the text that is to appear at the top of the exported PDF.
+* `footer` - In the footer, we can specify the text that is to appear at the bottom of the exported PDF.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -149,7 +152,12 @@ The PDF export option allows you to include a header and footer in the exported 
 
 ## Excel export
 
-The rendered chart can be exported to `XLSX` or `CSV` format using the excel export method in chart. The input parameters for this method are `Export Type` for format and `fileName` for result.
+You can export the rendered chart data to `XLSX` or `CSV` formats using the export method.
+
+In the export method, you'll need to specify the following parameters in order to export the data to Excel:
+
+* `type` - You can specify a type, which can be either `XLSX` or `CSV` format, for exporting in Excel.
+* `fileName` - You can specify a name for the exported documents.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -180,7 +188,9 @@ The rendered chart can be exported to `XLSX` or `CSV` format using the excel exp
 
 ## Exporting charts into multiple page
 
-You can export charts from the web page onto multiple pages within a PDF document.
+In the export method, specify the following parameter to export charts to multiple pages in a PDF format.
+
+* `exportToMultiplePage` - You can enable `exportToMultiplePage` to export each chart on an individual page.
 
 {% if page.publishingplatform == "typescript" %}
 
