@@ -13,7 +13,12 @@ domainurl: ##DomainURL##
 
 ## Tooltip synchronization
 
-Tooltip synchronization enhances the data visualization experience by seamlessly coordinating tooltips across multiple charts. When we hover over a data point in one chart, synchronized tooltips intelligently display related information in other connected charts simultaneously. 
+Synchronize the tooltips across the multiple charts using `showTooltip` and `hideTooltip` methods. When we hover over a data point in one chart, call the `showTooltip` method for the rest of the chart to display related information in other connected charts simultaneously.
+
+In the `showTooltip` method, specify the following parameter programmatically to enable tooltips for a particular chart:
+
+* `x` - Data point x-value or x-coordinate value.
+* `y` - Data point y-value or y-coordinate value.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,7 +49,12 @@ Tooltip synchronization enhances the data visualization experience by seamlessly
 
 ## Crosshair synchronization
 
-Crosshair synchronization ensures that as we navigate one chart, the crosshair cursor precisely aligns with data points in other linked charts, simplifying data comparison and analysis.
+Synchronize the crosshair across multiple charts using the `showCrosshair` and `hideCrosshair` methods. When hovering over one chart, call the `showCrosshair` method for the rest of the charts to align with data points in other linked charts, simplifying data comparison and analysis.
+
+In the `showCrosshair` method, specify the following parameter programmatically to enable crosshairs for a particular chart:
+
+* `x` - Specifies the x value of the point or x-coordinate.
+* `y` - Specifies the y value of the point or y-coordinate.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -75,7 +85,7 @@ Crosshair synchronization ensures that as we navigate one chart, the crosshair c
 
 ## Zooming synchronization
 
-Zoom synchronization ensures coherence across multiple charts by maintaining consistent zoom levels. It delivers a unified perspective of  data, facilitating comprehensive analysis at various levels of granularity.
+You can maintain consistent zoom levels across multiple charts using the [`zoomComplete`](../api/chart/iZoomCompleteEventArgs/) event. In the zoomComplete event, obtain the [`zoomFactor`](../api/chart/iZoomCompleteEventArgs/#currentzoomfactor) and [`zoomPosition`](../api/chart/iZoomCompleteEventArgs/#currentzoomposition) values of the particular chart and then apply the same values to the rest of the charts.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -106,7 +116,7 @@ Zoom synchronization ensures coherence across multiple charts by maintaining con
 
 ## Selection synchronization
 
-Selection synchronization streamlines data analysis by highlighting related data points in all connected charts when we make a selection, enabling seamless comparison.
+You can select the data across multiple charts using the [`selectionComplete`](../api/chart/iSelectionCompleteEventArgs/) event. In the selectionComplete event, obtain the selected values of the current chart and then apply the same values to the rest of the charts.
 
 {% if page.publishingplatform == "typescript" %}
 
