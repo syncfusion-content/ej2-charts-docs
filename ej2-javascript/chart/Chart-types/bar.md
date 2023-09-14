@@ -16,7 +16,7 @@ To render a [bar series](https://www.syncfusion.com/javascript-ui-controls/js-ch
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs77/index.ts %}
 {% endhighlight %}
@@ -47,7 +47,7 @@ The [`columnSpacing`](../../api/chart/seriesModel/#columnspacing) and [`columnWi
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs78/index.ts %}
 {% endhighlight %}
@@ -78,7 +78,7 @@ You can use the [`groupName`](../../api/chart/seriesModel/#groupname) property t
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs79/index.ts %}
 {% endhighlight %}
@@ -103,13 +103,13 @@ You can use the [`groupName`](../../api/chart/seriesModel/#groupname) property t
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs79" %}
 {% endif %}
 
-## Cylindrical chart
+## Cylindrical bar chart
 
 To render a cylindrical bar chart, set the `columnFacet` property to `Cylinder` in the chart series.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs175/index.ts %}
 {% endhighlight %}
@@ -145,7 +145,7 @@ The following properties can be used to customize the `bar` series.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs80/index.ts %}
 {% endhighlight %}

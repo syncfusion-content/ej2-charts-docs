@@ -16,7 +16,7 @@ To render a [100% stacked bar](https://www.syncfusion.com/javascript-ui-controls
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs147/index.ts %}
 {% endhighlight %}
@@ -41,13 +41,13 @@ To render a [100% stacked bar](https://www.syncfusion.com/javascript-ui-controls
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs147" %}
 {% endif %}
 
-## Cylindrical chart
+## 100% Cylindrical stacked bar chart
 
-To render a cylindrical 100% stacked bar chart, set the `columnFacet` property to `Cylinder` in the chart series.
+To render a 100% cylindrical stacked bar chart, set the `columnFacet` property to `Cylinder` in the chart series.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs179/index.ts %}
 {% endhighlight %}
@@ -83,7 +83,7 @@ The following properties can be used to customize the `100% stacked column` seri
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs148/index.ts %}
 {% endhighlight %}

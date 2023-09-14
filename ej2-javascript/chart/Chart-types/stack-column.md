@@ -16,7 +16,7 @@ To render a stacked column series, use series [`type`](../../api/chart/seriesMod
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs140/index.ts %}
 {% endhighlight %}
@@ -48,7 +48,7 @@ Columns with same group name are stacked on top of each other.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs141/index.ts %}
 {% endhighlight %}
@@ -73,13 +73,13 @@ Columns with same group name are stacked on top of each other.
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs141" %}
 {% endif %}
 
-## Cylindrical chart
+## Cylindrical stacked column chart
 
 To render a cylindrical stacked column chart, set the `columnFacet` property to `Cylinder` in the chart series.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs176/index.ts %}
 {% endhighlight %}
@@ -115,7 +115,7 @@ The following properties can be used to customize the `column` series.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs142/index.ts %}
 {% endhighlight %}

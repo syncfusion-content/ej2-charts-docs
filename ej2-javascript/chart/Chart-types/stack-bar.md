@@ -16,7 +16,7 @@ To render a stacked bar series, use series [`type`](../../api/chart/seriesModel/
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs137/index.ts %}
 {% endhighlight %}
@@ -47,7 +47,7 @@ You can use the [`stackingGroup`](../../api/chart/series/#stackinggroup-string) 
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs138/index.ts %}
 {% endhighlight %}
@@ -72,13 +72,13 @@ You can use the [`stackingGroup`](../../api/chart/series/#stackinggroup-string) 
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs138" %}
 {% endif %}
 
-## Cylindrical chart
+## Cylindrical stacked bar chart
 
 To render a cylindrical stacked bar chart, set the `columnFacet` property to `Cylinder` in the chart series.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs177/index.ts %}
 {% endhighlight %}
@@ -114,7 +114,7 @@ The following properties can be used to customize the `stacked bar` series.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs139/index.ts %}
 {% endhighlight %}

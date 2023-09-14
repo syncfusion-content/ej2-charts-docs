@@ -17,7 +17,7 @@ The rendered chart can be printed directly from the browser by calling the publi
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/print-cs2/index.ts %}
 {% endhighlight %}
@@ -44,17 +44,17 @@ The rendered chart can be printed directly from the browser by calling the publi
 
 ## Export
 
-The rendered chart can be exported to `JPEG`, `PNG`, `SVG`, or `PDF` format using the export method in chart. The input parameters for this method are `Export Type` for format and `fileName` for result.
+The rendered chart can be exported to `JPEG`, `PNG`, `SVG`, `PDF`, `XLSX`, or `CSV` format using the export method in chart. The input parameters for this method are `type` for format and `fileName` for result.
 
 The optional parameters for this method are,
-* `orientation` - either portrait or landscape,
+* `orientation` - either portrait or landscape mode during PDF export,
 * `controls` - pass collections of controls for multiple export,
 * `width` - width of chart export, and
 * `height` - height of chart export.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/export-cs2/index.ts %}
 {% endhighlight %}
@@ -79,53 +79,16 @@ The optional parameters for this method are,
 {% previewsample "page.domainurl/code-snippet/chart/export-cs2" %}
 {% endif %}
 
-## Multiple chart export
+### Adding header and footer in PDF export
 
-You can export the multiple charts in single page by passing the multiple chart objects in the export method of chart.
+In the export method, specify the following parameters to add a header and footer text to the exported PDF document:
 
-To export multiple charts in a single page, follow the given steps:
-
-**Step 1**:
-
-Initially, render more than one chart to export, and then add button to export the multiple charts. In button click, call the export private method in charts, and then pass the multiple chart objects in the export method.
+* `header` - Specify the text that should appear at the top of the exported PDF document.
+* `footer` - Specify the text that should appear at the bottom of the exported PDF document.
 
 {% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/chart/export-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/export-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/chart/export-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/chart/export-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/export-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/chart/export-cs3" %}
-{% endif %}
-
-## Adding header and footer in PDF export
-
-In the export method, specify the following parameters to add a header and footer to the exported PDF document:
-
-* `header` - Specify the text that should appear at the top of the exported PDF.
-* `footer` - Specify the text that should appear at the bottom of the exported PDF.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/export-cs4/index.ts %}
 {% endhighlight %}
@@ -150,18 +113,13 @@ In the export method, specify the following parameters to add a header and foote
 {% previewsample "page.domainurl/code-snippet/chart/export-cs4" %}
 {% endif %}
 
-## Excel export
+### Exporting charts into separate page during the PDF export
 
-You can export the rendered chart data to `XLSX` or `CSV` formats using the export method.
-
-In the export method, you'll need to specify the following parameters in order to export the data to Excel:
-
-* `type` - Specify the export format as either `XLSX` or `CSV` for exporting in Excel.
-* `fileName` - A name for the exported file.
+During the PDF export, you can export each chart as a separate page by setting the `exportToMultiplePage` parameter to **true**.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/export-cs5/index.ts %}
 {% endhighlight %}
@@ -186,35 +144,35 @@ In the export method, you'll need to specify the following parameters in order t
 {% previewsample "page.domainurl/code-snippet/chart/export-cs5" %}
 {% endif %}
 
-## Exporting charts into multiple page
+## Multiple chart export
 
-In the export method, specify the following parameter to export charts to multiple pages in a PDF format.
+You can export the multiple charts in single page by passing the multiple chart objects in the export method of chart. To export multiple charts in a single page, follow the given steps:
 
-* `exportToMultiplePage` - Set `exportToMultiplePage` to **true** in order to export each chart on an individual page.
+Initially, render more than one chart to export, and then add button to export the multiple charts. In button click, call the export method in charts, and then pass the multiple chart objects in the export method.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/chart/export-cs6/index.ts %}
+{% include code-snippet/chart/export-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/export-cs6/index.html %}
+{% include code-snippet/chart/export-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/chart/export-cs6" %}
+{% previewsample "page.domainurl/code-snippet/chart/export-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/chart/export-cs6/index.js %}
+{% include code-snippet/chart/export-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/export-cs6/index.html %}
+{% include code-snippet/chart/export-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/export-cs6" %}
+{% previewsample "page.domainurl/code-snippet/chart/export-cs3" %}
 {% endif %}
