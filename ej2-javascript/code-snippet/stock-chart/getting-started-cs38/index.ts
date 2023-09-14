@@ -28,7 +28,6 @@ let datetimeCategoryData: Object[] = [
 let series2: Object[] = [];
 let point2: Object;
 for (var i = 1; i < 46; i++) {
-  debugger;
   point2 = {
     x: datetimeCategoryData[i],
     y: parseInt((Math.floor(Math.random() * (130 - 120 + 1)) + 120).toString(), 10),
