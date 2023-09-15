@@ -115,7 +115,7 @@ In the export method, specify the following parameters to add a header and foote
 
 ### Exporting charts into separate page during the PDF export
 
-During the PDF export, you can export each chart as a separate page by setting the `exportToMultiplePage` parameter to **true**.
+During PDF export, set the `exportToMultiplePage` parameter to **true** to export each chart as a separate page.
 
 {% if page.publishingplatform == "typescript" %}
 
