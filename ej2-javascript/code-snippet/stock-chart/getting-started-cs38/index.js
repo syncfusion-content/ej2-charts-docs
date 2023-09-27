@@ -13,17 +13,17 @@ let datetimeCategoryData = [
 
 let series2 = [];
 let point2;
-for (var i = 1; i < 46; i++) {
+for (var i = 0; i < 46; i++) {  
   point2 = {
     x: datetimeCategoryData[i],
-    y: parseInt((Math.floor(Math.random() * (130 - 120 + 1)) + 120).toString(), 10),
-    High: parseInt((Math.floor(Math.random() * (92 - 88 + 1)) + 88).toString(), 10),
-    Low: parseInt((Math.floor(Math.random() * (86 - 76 + 1)) + 76).toString(), 10),
-    Open: parseInt((Math.floor(Math.random() * (85 - 75 + 1)) + 75).toString(), 10),
-    Close: parseInt((Math.floor(Math.random() * (90 - 85 + 1)) + 85).toString(), 10),
-    Volume: parseInt((Math.floor(Math.random() * (965935749 - 660187068 + 1)) + 660187068).toString(), 10)
+    y: getRandomInRange(120, 130)
   };
   series2.push(point2);
+}
+function getRandomInRange(min, max) {
+  const randomDecimal = Math.random();
+  const randomValue = randomDecimal * (max - min) + min;
+  return randomValue;
 }
 
 var stockChart = new ej.charts.StockChart({
