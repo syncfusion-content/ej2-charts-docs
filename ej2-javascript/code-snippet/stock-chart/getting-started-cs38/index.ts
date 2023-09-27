@@ -11,7 +11,11 @@ StockChart.Inject(AccumulationDistributionIndicator, AtrIndicator, BollingerBand
 StockChart.Inject(MacdIndicator, RsiIndicator, SmaIndicator, StochasticIndicator);
 StockChart.Inject(Trendlines, TmaIndicator, RangeTooltip, Tooltip, Crosshair, Export);
 
-let datetimeCategoryData: Object[] = [
+interface DataPoint {
+  x: Date;
+}
+
+let datetimeCategoryData: DataPoint[] = [
   { x: new Date(2021, 1, 11) }, { x: new Date(2021, 1, 12) }, { x: new Date(2021, 1, 13) }, { x: new Date(2021, 1, 14) }, { x: new Date(2021, 1, 15) },
   { x: new Date(2021, 1, 19) }, { x: new Date(2021, 1, 20) }, { x: new Date(2021, 1, 21) }, { x: new Date(2021, 1, 22) }, { x: new Date(2021, 3, 1) },
   { x: new Date(2021, 3, 2) }, { x: new Date(2021, 4, 1) }, { x: new Date(2021, 4, 5) }, { x: new Date(2021, 4, 6) }, { x: new Date(2021, 4, 7) },
@@ -26,10 +30,15 @@ let datetimeCategoryData: Object[] = [
 
 let series2: Object[] = [];
 let point2: Object;
-for (var i = 0; i < 46; i++) {  
+for (var i = 0; i < 46; i++) {
   point2 = {
-    x: datetimeCategoryData[i],
-    y: getRandomInRange(120, 130)
+      x: datetimeCategoryData[i].x,
+      y: getRandomInRange(120, 130),
+      high: getRandomInRange(88, 92),
+      low: getRandomInRange(76, 86),
+      open: getRandomInRange(75, 85),
+      close: getRandomInRange(85, 90),
+      volume: getRandomInRange(660187068, 965935749)
   };
   series2.push(point2);
 }
