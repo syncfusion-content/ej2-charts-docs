@@ -13,10 +13,15 @@ let datetimeCategoryData = [
 
 let series2 = [];
 let point2;
-for (var i = 0; i < 46; i++) {  
+for (var i = 0; i < 46; i++) {
   point2 = {
-    x: datetimeCategoryData[i],
-    y: getRandomInRange(120, 130)
+      x: datetimeCategoryData[i].x,
+      y: getRandomInRange(120, 130),
+      high: getRandomInRange(88, 92),
+      low: getRandomInRange(76, 86),
+      open: getRandomInRange(75, 85),
+      close: getRandomInRange(85, 90),
+      volume: getRandomInRange(660187068, 965935749)
   };
   series2.push(point2);
 }
