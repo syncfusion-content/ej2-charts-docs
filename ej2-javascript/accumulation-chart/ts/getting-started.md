@@ -34,15 +34,23 @@ The list of minimum dependencies required to use an accumulation chart are follo
 
 Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
-```
-    git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
-```
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
 
 After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
 
-```
-    cd ej2-quickstart
-```
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+cd ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Add Syncfusion JavaScript packages
 
@@ -50,9 +58,13 @@ Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com]
 
 The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
 
-```
-    npm install
-```
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
+npm install
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Add Accumulation Chart to the Project
 
@@ -60,7 +72,9 @@ Open the application in Visual Studio Code and add the Syncfusion JavaScript UI 
 
 Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.html` file to initialize the Accumulation chart.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -79,11 +93,15 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 </body>
 
 </html>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 Now, import an accumulation chart component in your `app.ts` to instantiate the accumulation chart, and append the accumulation chart instance to the `#element` `[src/app/app.ts]`
 
-```javascript
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
 import { AccumulationChart } from '@syncfusion/ej2-charts';
 
 // initialize Accumulation Chart component
@@ -91,7 +109,9 @@ let chart: AccumulationChart = new AccumulationChart();
 
 // render initialized Accumulation Chart
 chart.appendTo('#element');
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 **Pie Series**
 
@@ -110,6 +130,10 @@ By default, the pie series will be rendered when assigning the JSON data to the 
 
 Now, use the `npm run start` command to run the application in the browser.
 
-```
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
 npm run start
-```
+
+{% endhighlight %}
+{% endtabs %}

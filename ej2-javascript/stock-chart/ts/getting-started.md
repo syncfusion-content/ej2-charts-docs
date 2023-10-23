@@ -40,15 +40,23 @@ Below is the list of minimum dependencies required to use the Stock Chart.
 
 Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
-```
-    git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
-```
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
 
 After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
 
-```
-    cd ej2-quickstart
-```
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+cd ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Add Syncfusion JavaScript packages
 
@@ -56,9 +64,13 @@ Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com]
 
 The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
 
-```
-    npm install
-```
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
+npm install
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Add Stock Chart to the Project
 
@@ -66,7 +78,9 @@ Open the application in Visual Studio Code and add the Syncfusion JavaScript UI 
 
 Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.html` file to initialize the Stock Chart.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -85,7 +99,9 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 </body>
 
 </html>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 Now import the Stock Chart component into your `app.ts` to instantiate a Stock Chart and append the Stock Chart instance to the `#element` `[src/app/app.ts]`
 
@@ -101,9 +117,13 @@ stockChart.appendTo('#element');
 
 Now use the `npm run start` command to run the application in the browser.
 
-```
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
 npm run start
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Module Injection
 
@@ -117,16 +137,21 @@ Stock Chart component are segregated into individual feature-wise modules. In or
 Now import the above mentioned modules from Stock Chart package and inject it into the  Stock Chart component using
 `StockChart.Inject`  method.
 
-```javascript
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
 import { StockChart, CandleSeries, DateTime, Tooltip } from '@syncfusion/ej2-charts';
 StockChart.Inject(CandleSeries, DataLabel, Tooltip, DateTime);
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Populate Stock Chart With Data
 
 This section explains how to plot below JSON data to the  Stock Chart.Please find the below imported datasource.
 
-```javascript
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
 
 let stockchartData: any[] = [{
    x: new Date( '2012-04-02' ),
@@ -170,7 +195,8 @@ let stockchartData: any[] = [{
   },
   ............];
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 Add a series object to the chart by using [`series`](../api/stock-chart/stockSeries/) property and then set the JSON data to [`dataSource`](../api/stock-chart/stockSeries/#datasource) property.
 

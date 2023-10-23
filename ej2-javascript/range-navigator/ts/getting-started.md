@@ -34,15 +34,23 @@ This section explains how to create a simple Range navigator and configure its a
 
 Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
-```
-    git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
-```
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
 
 After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
 
-```
-    cd ej2-quickstart
-```
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+cd ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Add Syncfusion JavaScript packages
 
@@ -50,9 +58,13 @@ Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com]
 
 The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
 
-```
-    npm install
-```
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
+npm install
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Add Range Navigator to the Project
 
@@ -60,7 +72,9 @@ Open the application in Visual Studio Code and add the Syncfusion JavaScript UI 
 
 Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.html` file to initialize the Range Navigator.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -79,11 +93,14 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 </body>
 
 </html>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 Now import the RangeNavigator component into your `app.ts` to instantiate a RangeNavigator and append the range navigator instance to the `#element` [src/app/app.ts].
 
-```ts
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
 
 import { RangeNavigator } from '@syncfusion/ej2-charts';
 
@@ -93,16 +110,20 @@ let range: RangeNavigator = new RangeNavigator();
 // render initialized RangeNavigator
 range.appendTo('#element');
 
-
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Run the Application
 
 The quickstart project is configured to compile and run the application in the browser. Use the following command to run the application.
 
-```
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
 npm start
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 The below example shows a basic Range Navigator.
 
@@ -127,10 +148,14 @@ To create range navigator with additional features, inject the required modules.
 
 Now import the above mentioned modules from chart package and inject it into the RangeNavigator component using `RangeNavigator.Inject` method.
 
- ```javascript
-   import { RangeNavigator, AreaSeries, DateTime, RangeTooltip }from '@syncfusion/ej2-charts';
-   RangeNavigator.Inject(AreaSeries, DateTime, RangeTooltip);
- ```
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
+import { RangeNavigator, AreaSeries, DateTime, RangeTooltip }from '@syncfusion/ej2-charts';
+RangeNavigator.Inject(AreaSeries, DateTime, RangeTooltip);
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Populate Range Navigator with Data
 
