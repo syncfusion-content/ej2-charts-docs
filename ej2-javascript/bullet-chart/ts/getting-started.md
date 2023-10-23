@@ -33,15 +33,23 @@ Below is the list of minimum dependencies required to use the Bullet Chart.
 
 Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
-```
-    git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
-```
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
 
 After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
 
-```
-    cd ej2-quickstart
-```
+{% tabs %}
+{% highlight bash tabtitle="CMD" %}
+
+cd ej2-quickstart
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Add Syncfusion JavaScript packages
 
@@ -49,9 +57,13 @@ Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com]
 
 The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
 
-```
-    npm install
-```
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
+npm install
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Add Bullet Chart to the Project
 
@@ -59,7 +71,9 @@ Open the application in Visual Studio Code and add the Syncfusion JavaScript UI 
 
 Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.html` file to initialize the Bullet chart.
 
-```html
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -78,11 +92,15 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 </body>
 
 </html>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 Now import the Bullet Chart component into your `app.ts` to instantiate a bullet chart and append the bullet chart instance to the `#element` `[src/app/app.ts]`
 
-```ts
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
 import { BulletChart } from '@syncfusion/ej2-charts';
 
 // initialize BulletChart component
@@ -90,13 +108,19 @@ let bulletChart: BulletChart = new BulletChart();
 
 // render initialized Bullet Chart
 bulletChart.appendTo('#element');
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 Now use the `npm run start` command to run the application in the browser.
 
-```
+{% tabs %}
+{% highlight bash tabtitle="NPM" %}
+
 npm run start
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 The below example shows a basic Chart.
 
@@ -119,16 +143,21 @@ Bullet Chart component are segregated into individual feature-wise modules. In o
 
 Now import the above mentioned modules from Bullet Chart package and inject it into the Bullet Chart component using `BulletChart.Inject`  method.
 
-```ts
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
 import { BulletChart, BulletTooltip } from '@syncfusion/ej2-charts';
 BulletChart.Inject(BulletTooltip);
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## BulletChart With Data
 
 This section explains how to plot local data to the Bullet Chart.
 
-```ts
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
 
 let data: any[] = [
        { value: 100, target: 80 },
@@ -137,7 +166,9 @@ let data: any[] = [
        { value: 400, target: 380 },
        { value: 500, target: 480 },
 ];
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 Now assign the local data to `dataSource` property. `value` and `target` values should be mapped with `valueName` and `targetName` respectively.
 
