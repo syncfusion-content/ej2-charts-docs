@@ -105,7 +105,9 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 
 Now import the Stock Chart component into your `app.ts` to instantiate a Stock Chart and append the Stock Chart instance to the `#element` `[src/app/app.ts]`
 
-```javascript
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+
 import { StockChart  } from '@syncfusion/ej2-charts';
 
 // initialize  Stock Chart component
@@ -113,7 +115,9 @@ let stockChart: StockChart = new StockChart();
 
 // render initialized Stock Chart
 stockChart.appendTo('#element');
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 Now use the `npm run start` command to run the application in the browser.
 
