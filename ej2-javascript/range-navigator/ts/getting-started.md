@@ -84,7 +84,6 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Typescript UI Controls" />
     <meta name="author" content="Syncfusion" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     ....
     ....
 </head>
