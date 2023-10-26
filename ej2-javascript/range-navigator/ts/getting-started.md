@@ -79,8 +79,11 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 <html lang="en">
 
 <head>
-    <title>Essential JS 2</title>
+    <title>EJ2 Animation</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typescript UI Controls" />
+    <meta name="author" content="Syncfusion" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     ....
     ....
