@@ -178,8 +178,7 @@ let chartData: any[] = [
 {% endhighlight %}
 {% endtabs %}
 
-Add a series object to the chart by using [`series`](../api/chart/series/) property. Now map the field names `month` and `sales` in the JSON data to the [`xName`](../api/chart/series/#xname) and [`yName`](../api/chart/series/#yname) properties of the series, then set the JSON data to
-[`dataSource`](../api/chart/series/#datasource) property.
+Add a series object to the chart by using [`series`](../api/chart/series/) property. Now map the field names `month` and `sales` in the JSON data to the [`xName`](../api/chart/series/#xname) and [`yName`](../api/chart/series/#yname) properties of the series, then set the JSON data to [`dataSource`](../api/chart/series/#datasource) property.
 
 Since the JSON contains category data, set the [`valueType`](../api/chart/axisModel/#valuetype) for horizontal axis to Category. By default, the axis valueType is Numeric.
 
