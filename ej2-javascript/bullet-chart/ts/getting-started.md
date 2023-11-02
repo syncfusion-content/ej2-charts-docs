@@ -68,6 +68,7 @@ System.config({
         'app': { main: 'app', defaultExtension: 'js' }
     }
 });
+System.import('app');
 ```
 
 >The [project](https://github.com/syncfusion/ej2-quickstart.git) is preconfigured with common settings (`src/styles/styles.css`, `system.config.js` ) to start with all Essential JS 2 components.
@@ -88,7 +89,7 @@ Add the HTML div element for Bullet Chart into your `index.html`. `[src/index.ht
     <meta name="author" content="Syncfusion" />
     <link href="index.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="systemjs.config.js"></script>
+    <script src="system.config.js"></script>
 </head>
 
 <body>
