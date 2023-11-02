@@ -75,6 +75,7 @@ System.config({
         'app': { main: 'app', defaultExtension: 'js' }
     }
 });
+System.import('app');
 ```
 
 >The [project](https://github.com/syncfusion/ej2-quickstart.git) is preconfigured with common
