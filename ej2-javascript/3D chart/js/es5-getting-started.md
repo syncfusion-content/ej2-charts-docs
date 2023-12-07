@@ -22,6 +22,8 @@ Below is the list of minimum dependencies required to use the 3D Chart.
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-data
     |-- @syncfusion/ej2-pdf-export
+    |-- @syncfusion/ej2-file-utils
+    |-- @syncfusion/ej2-compression
     |-- @syncfusion/ej2-svg-base
 ```
 
@@ -179,9 +181,9 @@ var chartData = [
 
 ```
 
-Add a series object to the 3D chart by using [`series`](../api/chart/series/) property. Now map the field names `month` and `sales` in the JSON data to the [`xName`](../api/chart/series/#xname) and [`yName`](../api/chart/series/#yname) properties of the series, then set the JSON data to [`dataSource`](../api/chart/series/#datasource) property.
+Add a series object to the 3D chart by using `series` property. Now map the field names `month` and `sales` in the JSON data to the `xName` and `yName` properties of the series, then set the JSON data to `dataSource` property.
 
-Since the JSON contains category data, set the [`valueType`](../api/chart/axisModel/#valuetype) for horizontal axis to Category. By default, the axis valueType is Numeric.
+Since the JSON contains category data, set the `valueType` for horizontal axis to Category. By default, the axis valueType is Numeric.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -194,7 +196,7 @@ Since the JSON contains category data, set the [`valueType`](../api/chart/axisMo
         
 {% previewsample "page.domainurl/code-snippet/chart3d/getting-started-cs2" %}
 
-The sales data are in thousands, so format the vertical axis label by adding `$` as a prefix and `K` as a suffix to each label. This can be achieved by setting the `${value}K` to the [`labelFormat`](../api/chart/axisModel/#labelformat) property of axis. Here, `{value}` act as a placeholder for each axis label.
+The sales data are in thousands, so format the vertical axis label by adding `$` as a prefix and `K` as a suffix to each label. This can be achieved by setting the `${value}K` to the `labelFormat` property of axis. Here, `{value}` act as a placeholder for each axis label.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -209,7 +211,7 @@ The sales data are in thousands, so format the vertical axis label by adding `$`
 
 ## Add 3D Chart Title
 
-You can add a title using [`title`](../api/chart/chartModel/#title) property to the 3D chart to provide quick information to the user about the data plotted in the 3D chart.
+You can add a title using `title` property to the 3D chart to provide quick information to the user about the data plotted in the 3D chart.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -224,7 +226,7 @@ You can add a title using [`title`](../api/chart/chartModel/#title) property to 
 
 ## Enable Legend
 
-You can use legend for the 3D chart by setting the [`visible`](../api/chart/legendSettingsModel/#visible) property to true in [`legendSettings`](../api/chart/chartModel/#legendsettings) object.
+You can use legend for the 3D chart by setting the `visible` property to true in `legendSettings` object.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -254,7 +256,7 @@ You can add data labels to improve the readability of the 3D chart. This can be 
 
 ## Enable Tooltip
 
-The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the [`enable`](../api/chart/tooltipSettingsModel/#enable) property as true in [`tooltip`](../api/chart/chartModel/#tooltip) object.
+The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the `enable` property as true in `tooltip` object.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

@@ -24,6 +24,8 @@ Below is the list of minimum dependencies required to use the 3D Chart.
     |-- @syncfusion/ej2-base
     |-- @syncfusion/ej2-data
     |-- @syncfusion/ej2-pdf-export
+    |-- @syncfusion/ej2-file-utils
+    |-- @syncfusion/ej2-compression
     |-- @syncfusion/ej2-svg-base
 ```
 
@@ -139,7 +141,7 @@ The below example shows a basic 3D Chart.
 
 3D Chart component are segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature module using `Chart3D.Inject()` method. In the current application, we are going to modify the above basic 3D chart to visualize sales data for a particular year. For this application we are going to use column series, tooltip, data label, category axis and legend feature of the 3D chart. Please find relevant feature module name and description as follows.
 
-* Column3DSeries - Inject this provider to use column series.
+* ColumnSeries3D - Inject this provider to use column series.
 * Legend3D - Inject this provider to use legend feature.
 * Tooltip3D - Inject this provider to use tooltip feature.
 * DataLabel3D - Inject this provider to use data label feature.
@@ -151,8 +153,8 @@ Now import the above mentioned modules from chart package and inject it into the
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
 
-import { Chart3D, Column3DSeries, Legend3D, Category3D, Tooltip3D } from '@syncfusion/ej2-charts';
-Chart3D.Inject(Column3DSeries, Legend3D, DataLabel3D, Tooltip3D, Category3D);
+import { Chart3D, ColumnSeries3D, Legend3D, Category3D, Tooltip3D } from '@syncfusion/ej2-charts';
+Chart3D.Inject(ColumnSeries3D, Legend3D, DataLabel3D, Tooltip3D, Category3D);
 
 {% endhighlight %}
 {% endtabs %}
@@ -176,9 +178,9 @@ let chartData: any[] = [
 {% endhighlight %}
 {% endtabs %}
 
-Add a series object to the 3D chart by using [`series`](../api/chart/series/) property. Now map the field names `month` and `sales` in the JSON data to the [`xName`](../api/chart/series/#xname) and [`yName`](../api/chart/series/#yname) properties of the series, then set the JSON data to [`dataSource`](../api/chart/series/#datasource) property.
+Add a series object to the 3D chart by using `series` property. Now map the field names `month` and `sales` in the JSON data to the `xName` and `yName` properties of the series, then set the JSON data to `dataSource` property.
 
-Since the JSON contains category data, set the [`valueType`](../api/chart/axisModel/#valuetype) for horizontal axis to Category. By default, the axis valueType is Numeric.
+Since the JSON contains category data, set the `valueType` for horizontal axis to Category. By default, the axis valueType is Numeric.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -191,7 +193,7 @@ Since the JSON contains category data, set the [`valueType`](../api/chart/axisMo
           
 {% previewsample "page.domainurl/code-snippet/chart3d/getting-started-cs2" %}
 
-The sales data are in thousands, so format the vertical axis label by adding `$` as a prefix and `K` as a suffix to each label. This can be achieved by setting the `${value}K` to the [`labelFormat`](../api/chart/axisModel/#labelformat) property of axis. Here, `{value}` act as a placeholder for each axis label.
+The sales data are in thousands, so format the vertical axis label by adding `$` as a prefix and `K` as a suffix to each label. This can be achieved by setting the `${value}K` to the `labelFormat` property of axis. Here, `{value}` act as a placeholder for each axis label.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -206,7 +208,7 @@ The sales data are in thousands, so format the vertical axis label by adding `$`
 
 ## Add 3D Chart Title
 
-You can add a title using [`title`](../api/chart/chartModel/#title) property to the 3D chart to provide quick information to the user about the data plotted in the 3D chart.
+You can add a title using `title` property to the 3D chart to provide quick information to the user about the data plotted in the 3D chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -221,7 +223,7 @@ You can add a title using [`title`](../api/chart/chartModel/#title) property to 
 
 ## Enable Legend
 
-You can use legend for the 3D chart by setting the [`visible`](../api/chart/legendSettingsModel/#visible) property to true in [`legendSettings`](../api/chart/chartModel/#legendsettings) object and by injecting the `Legend3D` module using `Chart3D.Inject(Legend3D)` method.
+You can use legend for the 3D chart by setting the `visible` property to true in `legendSettings` object and by injecting the `Legend3D` module using `Chart3D.Inject(Legend3D)` method.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -251,7 +253,7 @@ You can add data labels to improve the readability of the 3D chart. This can be 
 
 ## Enable Tooltip
 
-The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the [`enable`](../api/chart/tooltipSettingsModel/#enable) property as true in [`tooltip`](../api/chart/chartModel/#tooltip) object and by injecting `Tooltip3D` module using `Chart3D.Inject(Tooltip3D)` method.
+The tooltip is useful when you cannot display information by using the data labels due to space constraints. You can enable tooltip by setting the `enable` property as true in `tooltip` object and by injecting `Tooltip3D` module using `Chart3D.Inject(Tooltip3D)` method.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -264,4 +266,4 @@ The tooltip is useful when you cannot display information by using the data labe
           
 {% previewsample "page.domainurl/code-snippet/chart3d/getting-started-cs7" %}
 
-> You can refer to our [JavaScript 3D Charts](https://www.syncfusion.com/javascript-ui-controls/js-charts) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript 3D Charts example](https://ej2.syncfusion.com/demos/#/material/chart/line.html) that shows various 3D chart types and how to represent time-dependent data, showing trends in data at equal intervals.
+> You can refer to our `JavaScript 3D Charts` feature tour page for its groundbreaking feature representations. You can also explore our `JavaScript 3D Charts example` that shows various 3D chart types and how to represent time-dependent data, showing trends in data at equal intervals.

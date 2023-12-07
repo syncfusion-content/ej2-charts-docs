@@ -1,9 +1,9 @@
 
 
 
-import { Chart3D, Column3DSeries, Tooltip3D } from '@syncfusion/ej2-charts';
+import { Chart3D, ColumnSeries3D, Tooltip3D } from '@syncfusion/ej2-charts';
 import { Legend3D, Category3D, DataLabel3D } from '@syncfusion/ej2-charts';
-Chart3D.Inject(Column3DSeries, Legend3D, Category3D, Tooltip3D, DataLabel3D);
+Chart3D.Inject(ColumnSeries3D, Legend3D, Category3D, Tooltip3D, DataLabel3D);
 let chartData: any[] = [
       { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },
       { month: 'Mar', sales: 34 }, { month: 'Apr', sales: 32 },
@@ -29,11 +29,9 @@ let chart: Chart3D = new Chart3D({
         xName: 'month',
         yName: 'sales',
         type: 'Column',
-        marker: {
-            // Data label for 3d chart series
-            dataLabel: {
-                visible: true
-            }
+        // Data label for 3d chart series
+        dataLabel: {
+            visible: true
         }
     }],
     legendSettings: { visible: true },
