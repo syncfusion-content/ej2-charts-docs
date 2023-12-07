@@ -98,7 +98,7 @@ Add the HTML div tag with its `id` attribute as `element` in your `~/src/index.h
 {% endhighlight %}
 {% endtabs %}
 
-Now import the 3D Chart component into your `app.ts` to instantiate a 3D chart and append the 3D chart instance to the `#element` `[src/app/app.ts]`
+Now import the 3D Chart component into your `app.ts` to instantiate a 3D Chart and append the 3D Chart instance to the `#element` `[src/app/app.ts]`
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -139,7 +139,7 @@ The below example shows a basic 3D Chart.
 
 ## Module Injection
 
-3D Chart component are segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature module using `Chart3D.Inject()` method. In the current application, we are going to modify the above basic 3D chart to visualize sales data for a particular year. For this application we are going to use column series, tooltip, data label, category axis and legend feature of the 3D chart. Please find relevant feature module name and description as follows.
+3D Chart component are segregated into individual feature-wise modules. In order to use a particular feature, you need to inject its feature module using `Chart3D.Inject()` method. In the current application, we are going to modify the above basic 3D Chart to visualize sales data for a particular year. For this application we are going to use column series, tooltip, data label, category axis and legend feature of the 3D Chart. Please find relevant feature module name and description as follows.
 
 * ColumnSeries3D - Inject this provider to use column series.
 * Legend3D - Inject this provider to use legend feature.
@@ -161,7 +161,7 @@ Chart3D.Inject(ColumnSeries3D, Legend3D, DataLabel3D, Tooltip3D, Category3D);
 
 ## Populate 3D Chart With Data
 
-This section explains how to plot below JSON data to the 3D chart.
+This section explains how to plot below JSON data to the 3D Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
@@ -178,7 +178,7 @@ let chartData: any[] = [
 {% endhighlight %}
 {% endtabs %}
 
-Add a series object to the 3D chart by using `series` property. Now map the field names `month` and `sales` in the JSON data to the `xName` and `yName` properties of the series, then set the JSON data to `dataSource` property.
+Add a series object to the 3D Chart by using `series` property. Now map the field names `month` and `sales` in the JSON data to the `xName` and `yName` properties of the series, then set the JSON data to `dataSource` property.
 
 Since the JSON contains category data, set the `valueType` for horizontal axis to Category. By default, the axis valueType is Numeric.
 
@@ -208,7 +208,7 @@ The sales data are in thousands, so format the vertical axis label by adding `$`
 
 ## Add 3D Chart Title
 
-You can add a title using `title` property to the 3D chart to provide quick information to the user about the data plotted in the 3D chart.
+You can add a title using `title` property to the 3D Chart to provide quick information to the user about the data plotted in the 3D Chart.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -223,7 +223,7 @@ You can add a title using `title` property to the 3D chart to provide quick info
 
 ## Enable Legend
 
-You can use legend for the 3D chart by setting the `visible` property to true in `legendSettings` object and by injecting the `Legend3D` module using `Chart3D.Inject(Legend3D)` method.
+You can use legend for the 3D Chart by setting the `visible` property to true in `legendSettings` object and by injecting the `Legend3D` module using `Chart3D.Inject(Legend3D)` method.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -238,7 +238,7 @@ You can use legend for the 3D chart by setting the `visible` property to true in
 
 ## Add Data Label
 
-You can add data labels to improve the readability of the 3D chart. This can be achieved by setting the visible property to true in the dataLabel object and by injecting `DataLabel3D` module using `Chart3D.Inject(DataLabel3D)` method. Now, the data labels are arranged smartly based on series.
+You can add data labels to improve the readability of the 3D Chart. This can be achieved by setting the visible property to true in the dataLabel object and by injecting `DataLabel3D` module using `Chart3D.Inject(DataLabel3D)` method. Now, the data labels are arranged smartly based on series.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -266,4 +266,4 @@ The tooltip is useful when you cannot display information by using the data labe
           
 {% previewsample "page.domainurl/code-snippet/chart3d/getting-started-cs7" %}
 
-> You can refer to our `JavaScript 3D Charts` feature tour page for its groundbreaking feature representations. You can also explore our `JavaScript 3D Charts example` that shows various 3D chart types and how to represent time-dependent data, showing trends in data at equal intervals.
+> You can refer to our `JavaScript 3D Charts` feature tour page for its groundbreaking feature representations. You can also explore our `JavaScript 3D Charts example` that shows various 3D Chart types and how to represent time-dependent data, showing trends in data at equal intervals.

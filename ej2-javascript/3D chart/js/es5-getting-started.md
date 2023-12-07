@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Es5 getting started in ##Platform_Name## 3D Chart control
 
-This section explains you the steps required to create a simple 3D chart and demonstrate the basic usage of the 3D chart control.
+This section explains you the steps required to create a simple 3D Chart and demonstrate the basic usage of the 3D Chart control.
 
 ## Dependencies
 
@@ -73,7 +73,7 @@ After copying the files, then you can refer the chart's scripts into the `index.
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
-            <title>Essential JS 2 Chart</title>
+            <title>Essential JS 2 3D Chart</title>
 
             <!-- Essential JS 2 Chart's dependent scripts -->
             <script src="resources/scripts/ej2-base.min.js" type="text/javascript"></script>
@@ -109,7 +109,7 @@ The below html code example shows the minimal dependency of chart.
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
-            <title>Essential JS 2 Chart</title>
+            <title>Essential JS 2 3D Chart</title>
             <!-- Essential JS 2 Chart's global script -->
             <script src="http://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js" type="text/javascript"></script>
        </head>
@@ -129,12 +129,12 @@ In this document context we are going to use **ej2.min.js** which includes all t
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
-            <title>Essential JS 2 Chart</title>
+            <title>Essential JS 2 3D Chart</title>
             <!-- Essential JS 2 all script -->
             <script src="http://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
        </head>
        <body>
-           <!-- Add the HTML <div> element for chart  -->
+           <!-- Add the HTML <div> element for 3D Chart  -->
              <div id="element"></div>
              <script src="index.js" type="text/javascript"></script>
        </body>
@@ -142,7 +142,7 @@ In this document context we are going to use **ej2.min.js** which includes all t
 
 ```
 
-Place the following 3D chart code in the **index.js**.
+Place the following 3D Chart code in the **index.js**.
 
 ```javascript
 
@@ -166,7 +166,7 @@ The below example shows a basic 3D Chart.
 
 ## Populate 3D Chart With Data
 
-This section explains how to plot below JSON data to the 3D chart.
+This section explains how to plot below JSON data to the 3D Chart.
 
 ```javascript
 
@@ -181,7 +181,7 @@ var chartData = [
 
 ```
 
-Add a series object to the 3D chart by using `series` property. Now map the field names `month` and `sales` in the JSON data to the `xName` and `yName` properties of the series, then set the JSON data to `dataSource` property.
+Add a series object to the 3D Chart by using `series` property. Now map the field names `month` and `sales` in the JSON data to the `xName` and `yName` properties of the series, then set the JSON data to `dataSource` property.
 
 Since the JSON contains category data, set the `valueType` for horizontal axis to Category. By default, the axis valueType is Numeric.
 
@@ -211,7 +211,7 @@ The sales data are in thousands, so format the vertical axis label by adding `$`
 
 ## Add 3D Chart Title
 
-You can add a title using `title` property to the 3D chart to provide quick information to the user about the data plotted in the 3D chart.
+You can add a title using `title` property to the 3D Chart to provide quick information to the user about the data plotted in the 3D Chart.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -226,7 +226,7 @@ You can add a title using `title` property to the 3D chart to provide quick info
 
 ## Enable Legend
 
-You can use legend for the 3D chart by setting the `visible` property to true in `legendSettings` object.
+You can use legend for the 3D Chart by setting the `visible` property to true in `legendSettings` object.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -241,7 +241,7 @@ You can use legend for the 3D chart by setting the `visible` property to true in
 
 ## Add Data Label
 
-You can add data labels to improve the readability of the 3D chart. This can be achieved by setting the visible property to true in the dataLabel object. Now, the data labels are arranged smartly based on series.
+You can add data labels to improve the readability of the 3D Chart. This can be achieved by setting the visible property to true in the dataLabel object. Now, the data labels are arranged smartly based on series.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
