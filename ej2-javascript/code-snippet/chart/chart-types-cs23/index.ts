@@ -53,7 +53,7 @@ let chart: AccumulationChart = new AccumulationChart({
         }
     },
     resized: (args: IAccResizeEventArgs) => {
-        let bounds: ClientRect = document.getElementById('element').getBoundingClientRect();
+        let bounds: ClientRect = document.getElementById('container').getBoundingClientRect();
         if (bounds.width < bounds.height) {
             args.accumulation.series[0].width = '80%';
             args.accumulation.series[0].height = '70%';
