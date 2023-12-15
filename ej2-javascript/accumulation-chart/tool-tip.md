@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tool tip in ##Platform_Name## Accumulation chart control
+# Tooltip in ##Platform_Name## Accumulation chart control
 
 Tooltip for the accumulation chart can be enabled by using the `enable` property.
 
