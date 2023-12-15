@@ -15,7 +15,7 @@ Tooltip for the accumulation chart can be enabled by using the `enable` proper
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs66/index.ts %}
 {% endhighlight %}
@@ -48,7 +48,7 @@ We can specify header for the tooltip using `header` property.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs67/index.ts %}
 {% endhighlight %}
@@ -79,7 +79,7 @@ By default, tooltip shows information of x and y value in points. In addition to
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs68/index.ts %}
 {% endhighlight %}
@@ -104,13 +104,13 @@ By default, tooltip shows information of x and y value in points. In addition to
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs68" %}
 {% endif %}
 
-## Tooltip Format
+## Tooltip format
 
 Any HTML element can be displayed in the tooltip by using the `template` property.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs69/index.ts %}
 {% endhighlight %}
@@ -135,6 +135,37 @@ Any HTML element can be displayed in the tooltip by using the `template` propert
 {% previewsample "page.domainurl/code-snippet/chart/chart-types-cs69" %}
 {% endif %}
 
+## Fixed tooltip
+
+By default, tooltips track the mouse movement, but you can establish a fixed position for the tooltip by utilizing the `location` property.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/chart/chart-types-cs180/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs180/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs180" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/chart/chart-types-cs180/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/chart/chart-types-cs180/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs180" %}
+{% endif %}
+
 ## Customization
 
 The [`fill`](../api/chart/tooltipSettingsModel/#fill) and [`border`](../api/chart/tooltipSettingsModel/#border) properties are used to customize the background color and border of the tooltip respectively. The [`textStyle`](../api/chart/tooltipSettingsModel/#textstyle)
@@ -142,7 +173,7 @@ property in the tooltip is used to customize the font of the tooltip text. The [
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs70/index.ts %}
 {% endhighlight %}
@@ -173,7 +204,7 @@ Using `tooltipRender` event, you can customize a tooltip for particular point.�
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/chart/chart-types-cs71/index.ts %}
 {% endhighlight %}
