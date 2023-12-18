@@ -74,7 +74,7 @@ The shape of the target bar can be customized using the [`targetTypes`](../../ap
 
 ## Target bar customization
 
-The following properties can be used to customize the target bar. Also you can bind the color for the target bar from [`dataSource`](../../api/bullet-chart/#datasource) for the bullet chart.
+The following properties can be used to customize the target bar. Also, you can bind the color for the target bar from [`dataSource`](../../api/bullet-chart/#datasource) for the bullet chart.
 
 * [`targetColor`](../../api/bullet-chart#targetcolor) - Specifies the fill color of target bar.
 * [`targetWidth`](../../api/bullet-chart#targetwidth) - Specifies the width of target bar.

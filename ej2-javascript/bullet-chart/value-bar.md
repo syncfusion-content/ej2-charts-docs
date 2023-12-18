@@ -107,7 +107,7 @@ Using the [`valueBorder`](../../api/bullet-chart/#valueborder) property of the b
 
 ### Fill color and height customization
 
-Customize the fill color and height of the actual bar using the [`valueFill`](../../api/bullet-chart/#valuefill) and [`valueHeight`](../../api/bullet-chart/#valueheight) properties of the bullet chart. Also you can bind the color for the actual bar from [`dataSource`](../../api/bullet-chart/#datasource) for the bullet chart using [`valueFill`](../../api/bullet-chart/#valuefill) property.
+Customize the fill color and height of the actual bar using the [`valueFill`](../../api/bullet-chart/#valuefill) and [`valueHeight`](../../api/bullet-chart/#valueheight) properties of the bullet chart. Also, you can bind the color for the actual bar from [`dataSource`](../../api/bullet-chart/#datasource) for the bullet chart using [`valueFill`](../../api/bullet-chart/#valuefill) property.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -17,7 +17,7 @@ Chart will display details about the points through tooltip, when the mouse is m
 
 ## Default tooltip
 
-By default, tooltip is not visible. Enable the tooltip by setting [`enable`](../../api/chart/tooltipSettings/#enable) property to true and by injecting `Tooltip` module using `Chart.Inject(Tooltip)`.
+By default, tooltip is not visible. You can enable the tooltip by setting [`enable`](../../api/chart/tooltipSettings/#enable) property to **true** and by injecting `Tooltip` module using `Chart.Inject(Tooltip)`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -50,7 +50,7 @@ By default, tooltip is not visible. Enable the tooltip by setting [`enable`](../
 
 ## Fixed tooltip
 
-By default, tooltips track the mouse movement, but you can establish a fixed position for the tooltip by utilizing the `location` property.
+By default, tooltip track the mouse movement, but you can set a fixed position for the tooltip by using the `location` property.
 
 {% if page.publishingplatform == "typescript" %}
 
