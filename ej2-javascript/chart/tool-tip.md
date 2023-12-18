@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Tool tip in ##Platform_Name## Chart control | Syncfusion
-description: Learn here all about Tool tip in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
+title: Tooltip in ##Platform_Name## Chart control | Syncfusion
+description: Learn here all about Tooltip in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Tool tip 
+control: Tooltip 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tool tip in ##Platform_Name## Chart control
+# Tooltip in ##Platform_Name## Chart control
 
 <!-- markdownlint-disable MD036 -->
 
@@ -17,7 +17,7 @@ Chart will display details about the points through tooltip, when the mouse is m
 
 ## Default tooltip
 
-By default, tooltip is not visible. Enable the tooltip by setting [`enable`](https://ej2.syncfusion.com/documentation/api/chart/tooltipSettingsModel#enable-boolean) property to true and by injecting `Tooltip` module using `Chart.Inject(Tooltip)`.
+By default, tooltip is not visible. Enable the tooltip by setting [`enable`](../../api/chart/tooltipSettings/#enable) property to true and by injecting `Tooltip` module using `Chart.Inject(Tooltip)`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -114,7 +114,7 @@ By default, tooltip shows information of x and y value in points. In addition to
 
 ## Tooltip template
 
-Any HTML elements can be displayed in the tooltip by using the ‘template’ property of the tooltip. You can use the ${x} and ${y} as place holders in the HTML element to display the x and y values of the corresponding data point.
+Any HTML elements can be displayed in the tooltip by using the [`template`](../../api/chart/tooltipSettings/#template) property of the tooltip. You can use the ${x} and ${y} as place holders in the HTML element to display the x and y values of the corresponding data point.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -145,7 +145,7 @@ Any HTML elements can be displayed in the tooltip by using the ‘template’ pr
 
 ## Customize the appearance of tooltip
 
-The [`fill`](https://ej2.syncfusion.com/documentation/api/chart/tooltipSettingsModel#fill-string) and [`border`](https://ej2.syncfusion.com/documentation/api/chart/tooltipSettingsModel#border-bordermodel) properties are used to customize the background color and border of the tooltip respectively. The [`textStyle`](https://ej2.syncfusion.com/documentation/api/chart/tooltipSettingsModel#textstyle-fontmodel) property in the tooltip is used to customize the font of the tooltip text. The [`highlightColor`](https://ej2.syncfusion.com/documentation/api/chart/chartModel/#highlightcolor) property is used to customize the point color while hovering for tooltip.
+The [`fill`](../../api/chart/tooltipSettings/#fill) and [`border`](../../api/chart/tooltipSettings/#border) properties are used to customize the background color and border of the tooltip respectively. The [`textStyle`](../../api/chart/tooltipSettings/#textstyle) property in the tooltip is used to customize the font of the tooltip text. The [`highlightColor`](../../api/chart#highlightcolor) property is used to customize the point color while hovering for tooltip.
 
 {% if page.publishingplatform == "typescript" %}
 
