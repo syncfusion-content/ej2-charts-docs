@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with data in ##Platform_Name## Chart control | Syncfusion
-description: Learn here all about Working with data in Syncfusion ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more.
+title: Working with data in ##Platform_Name## 3D Chart control | Syncfusion
+description: Learn here all about Working with data in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Working with data 
 publishingplatform: ##Platform_Name##
@@ -10,9 +10,9 @@ domainurl: ##DomainURL##
 ---
 <!-- markdownlint-disable MD036 -->
 
-# Working with data in ##Platform_Name## Chart control
+# Working with data in ##Platform_Name## 3D Chart control
 
-Chart can visualise data bound from local or remote data.
+3D Chart can visualise data bound from local or remote data.
 
 ## Local Data
 
