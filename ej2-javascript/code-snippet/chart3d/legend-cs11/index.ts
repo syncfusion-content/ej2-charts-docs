@@ -1,9 +1,8 @@
 
 
 
-import {Chart3D, Category3D, Legend3D, ColumnSeries3D, Tooltip3D, Highlight3D, Chart3DLoadedEventArgs } from '@syncfusion/ej2-charts';
+import {Chart3D, Category3D, Legend3D, ColumnSeries3D, Tooltip3D, Highlight3D } from '@syncfusion/ej2-charts';
 Chart3D.Inject(ColumnSeries3D, Category3D, Legend3D, Tooltip3D, Highlight3D);
-
 let chartData: any[] = [
     { country: "USA", gold: 50, silver: 70, bronze: 45 },
     { country: "China", gold: 40, silver: 60, bronze: 55 },
@@ -14,9 +13,7 @@ let chartData: any[] = [
     { country: "Italy", gold: 40, silver: 35, bronze: 37 },
     { country: "Sweden", gold: 30, silver: 25, bronze: 27 }
 ];
-let colors: string[] = ['#00BDAE', '#404041', '#357CD2'];
-
-let chart3D: Chart3D = new Chart3D({
+let chart: Chart3D = new Chart3D({
     primaryXAxis: {
         valueType: 'Category',
         title: 'Countries'
@@ -38,13 +35,11 @@ let chart3D: Chart3D = new Chart3D({
         xName: 'country', yName: 'bronze',
         name: 'Bronze', type: 'Column'
     }],
-    title: 'Olympic Medals',
     legendSettings: {
         visible: true,
-        position:'Right',
-        textWrap:'Wrap',
-        maximumLabelWidth:50,
-    },
+        toggleVisibility: true
+   },
+    title: 'Olympic Medals',
     wallColor: 'transparent',
     enableRotation: true,
     rotation: 7,
