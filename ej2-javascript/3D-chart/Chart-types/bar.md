@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Bar
 
-To render a [bar series](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/bar-chart), use series [`type`](../../api/chart/seriesModel/#type-string) as `Bar` and inject `BarSeries3D` module using `Chart3D.Inject(BarSeries3D)` method.
+To render a [bar series](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/bar-chart), use series [`type`](../../api/chart3d/series3DModel/#type) as `Bar` and inject `BarSeries3D` module using `Chart3D.Inject(BarSeries3D)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -43,7 +43,7 @@ To render a [bar series](https://www.syncfusion.com/javascript-ui-controls/js-ch
 
 ## Bar space and width
 
-The [`columnSpacing`](../../api/chart/seriesModel/#columnspacing) and [`columnWidth`](../../api/chart/seriesModel/#columnwidth) properties are used to customize the space between bars.
+The [`columnSpacing`](../../api/chart3d/series3DModel/#columnspacing) and [`columnWidth`](../../api/chart3d/series3DModel/#columnwidth) properties are used to customize the space between bars.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -74,7 +74,7 @@ The [`columnSpacing`](../../api/chart/seriesModel/#columnspacing) and [`columnWi
 
 ## Grouped bar
 
-You can use the [`groupName`](../../api/chart/seriesModel/#groupname) property to group the data points in the bar type charts. Data points with same group name are grouped together.
+The data points can be grouped in the bar type charts by using the [`groupName`](../../api/chart3d/series3DModel/#groupname) property. Data points with same group name are grouped together.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -105,7 +105,7 @@ You can use the [`groupName`](../../api/chart/seriesModel/#groupname) property t
 
 ## Cylindrical bar chart
 
-To render a cylindrical bar chart, set the [`columnFacet`](../../api/chart/series/#columnfacet) property to `Cylinder` in the chart series.
+To render a cylindrical bar chart, set the [`columnFacet`](../../api/chart3d/series3DModel/#columnfacet) property to `Cylinder` in the chart series.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -138,8 +138,8 @@ To render a cylindrical bar chart, set the [`columnFacet`](../../api/chart/serie
 
 The following properties can be used to customize the `bar` series.
 
-* [fill](../../api/chart/seriesModel/#fill) – Specifies the color of the series.
-* [opacity](../../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../../api/chart/seriesModel/#fill).
+* [fill](../../api/chart3d/series3DModel/#fill) – Specifies the color of the series.
+* [opacity](../../api/chart3d/series3DModel/#opacity) – Specifies the opacity of [fill](../../api/chart3d/series3DModel/#fill).
 
 {% if page.publishingplatform == "typescript" %}
 

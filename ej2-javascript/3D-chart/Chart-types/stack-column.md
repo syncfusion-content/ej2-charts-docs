@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Stacked column
 
-To render a stacked column series, use series [`type`](../../api/chart/seriesModel/#type-string) as `StackingColumn` and inject `StackingColumnSeries3D` module using `Chart3D.Inject(StackingColumnSeries3D)` method.
+To render a stacked column series, use series [`type`](../../api/chart3d/series3DModel/#type) as `StackingColumn` and inject `StackingColumnSeries3D` module using `Chart3D.Inject(StackingColumnSeries3D)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -43,8 +43,7 @@ To render a stacked column series, use series [`type`](../../api/chart/seriesMod
 
 ## Stacking group
 
-You can use the [`stackingGroup`](../../api/chart/series/#stackinggroup-string) property to group the stacked columns and 100% stacked columns.
-Columns with same group name are stacked on top of each other.
+To group the stacked columns, the [`stackingGroup`](../../api/chart3d/series3DModel/#stackinggroup) property can be used. Columns with same group name are stacked on top of each other.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -75,7 +74,7 @@ Columns with same group name are stacked on top of each other.
 
 ## Cylindrical stacked column chart
 
-To render a cylindrical stacked column chart, set the [`columnFacet`](../../api/chart/series/#columnfacet) property to `Cylinder` in the chart series.
+To render a cylindrical stacked column chart, set the [`columnFacet`](../../api/chart3d/series3DModel/#columnfacet) property to `Cylinder` in the chart series.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -106,10 +105,11 @@ To render a cylindrical stacked column chart, set the [`columnFacet`](../../api/
 
 ## Series customization
 
-The following properties can be used to customize the `column` series.
+The following properties can be used to customize the stacked `stacked column` series.
 
-* [fill](../../api/chart/seriesModel/#fill) – Specifies the color of the series.
-* [opacity](../../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../../api/chart/seriesModel/#fill).
+* [fill](../../api/chart3d/series3DModel/#fill) – Specifies the color of the series.
+* [opacity](../../api/chart3d/series3DModel/#opacity) – Specifies the opacity of [fill](../../api/chart3d/series3DModel/#fill).
+
 
 {% if page.publishingplatform == "typescript" %}
 

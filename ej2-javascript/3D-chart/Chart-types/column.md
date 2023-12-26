@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Column
 
-To render a [column series](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/column-chart), use series [`type`](../../api/chart/seriesModel/#type-string) as `Column` and inject `ColumnSeries3D` module using `Chart3D.Inject(ColumnSeries3D)` method.
+To render a [column series](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/column-chart), use series [`type`](../../api/chart3d/series3DModel/#type) as `Column` and inject `ColumnSeries3D` module using `Chart3D.Inject(ColumnSeries3D)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -43,7 +43,7 @@ To render a [column series](https://www.syncfusion.com/javascript-ui-controls/js
 
 ## Column space and width
 
-The [`columnSpacing`](../../api/chart/seriesModel/#columnspacing) and [`columnWidth`](../../api/chart/seriesModel/#columnwidth) properties are used to customize the space between columns.
+The [`columnSpacing`](../../api/chart3d/series3DModel/#columnspacing) and [`columnWidth`](../../api/chart3d/series3DModel/#columnwidth) properties are used to customize the space between bars.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -74,7 +74,7 @@ The [`columnSpacing`](../../api/chart/seriesModel/#columnspacing) and [`columnWi
 
 ## Grouped column
 
-You can use the [`groupName`](../../api/chart/seriesModel/#groupname) property to group the data points in the column type charts. Data points with same group name are grouped together.
+The data points can be grouped in the bar type charts by using the [`groupName`](../../api/chart3d/series3DModel/#groupname) property. Data points with same group name are grouped together.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -105,7 +105,7 @@ You can use the [`groupName`](../../api/chart/seriesModel/#groupname) property t
 
 ## Cylindrical column chart
 
-To render a cylindrical column chart, set the [`columnFacet`](../../api/chart/series/#columnfacet) property to `Cylinder` in the chart series.
+To render a cylindrical bar chart, set the [`columnFacet`](../../api/chart3d/series3DModel/#columnfacet) property to `Cylinder` in the chart series.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -138,8 +138,8 @@ To render a cylindrical column chart, set the [`columnFacet`](../../api/chart/se
 
 The following properties can be used to customize the `column` series.
 
-* [fill](../../api/chart/seriesModel/#fill) – Specifies the color of the series.
-* [opacity](../../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../../api/chart/seriesModel/#fill).
+* [fill](../../api/chart3d/series3DModel/#fill) – Specifies the color of the series.
+* [opacity](../../api/chart3d/series3DModel/#opacity) – Specifies the opacity of [fill](../../api/chart3d/series3DModel/#fill).
 
 {% if page.publishingplatform == "typescript" %}
 

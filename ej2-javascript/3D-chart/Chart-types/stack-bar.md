@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Stacked bar
 
-To render a stacked bar series, use series [`type`](../../api/chart/seriesModel/#type-string) as `StackingBar` and inject `StackingBarSeries3D` module using `Chart3D.Inject(StackingBarSeries3D)` method.
+To render a stacked bar series, use series [`type`](../../api/chart3d/series3DModel/#type) as `StackingBar` and inject `StackingBarSeries3D` module using `Chart3D.Inject(StackingBarSeries3D)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -43,7 +43,7 @@ To render a stacked bar series, use series [`type`](../../api/chart/seriesModel/
 
 ## Stacking group
 
-You can use the [`stackingGroup`](../../api/chart/series/#stackinggroup-string) property to group the stacked bar. Columns with same group name are stacked on top of each other.
+To group the stacked bar, the [`stackingGroup`](../../api/chart3d/series3DModel/#stackinggroup) property can be used. Columns with same group name are stacked on top of each other.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -74,7 +74,7 @@ You can use the [`stackingGroup`](../../api/chart/series/#stackinggroup-string) 
 
 ## Cylindrical stacked bar chart
 
-To render a cylindrical stacked bar chart, set the [`columnFacet`](../../api/chart/series/#columnfacet) property to `Cylinder` in the chart series.
+To render a cylindrical stacked bar chart, set the [`columnFacet`](../../api/chart3d/series3DModel/#columnfacet) property to `Cylinder` in the chart series.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -107,8 +107,8 @@ To render a cylindrical stacked bar chart, set the [`columnFacet`](../../api/cha
 
 The following properties can be used to customize the `stacked bar` series.
 
-* [fill](../../api/chart/seriesModel/#fill) – Specifies the color of the series.
-* [opacity](../../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../../api/chart/seriesModel/#fill).
+* [fill](../../api/chart3d/series3DModel/#fill) – Specifies the color of the series.
+* [opacity](../../api/chart3d/series3DModel/#opacity) – Specifies the opacity of [fill](../../api/chart3d/series3DModel/#fill).
 
 {% if page.publishingplatform == "typescript" %}
 

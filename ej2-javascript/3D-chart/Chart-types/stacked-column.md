@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 ---
 # Stacked column in ##Platform_Name## 3D Chart control
 
-To render a [100% stacked column](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/100-stacked-column-chart) series, use series [`type`](../../api/chart/seriesModel/#type-string) as `StackingColumn100` and inject `StackingColumnSeries3D` module using `Chart3D.Inject(StackingColumnSeries3D)` method.
+To render a [100% stacked column](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/100-stacked-column-chart) series, use series [`type`](../../api/chart3d/series3DModel/#type) as `StackingColumn100` and inject `StackingColumnSeries3D` module using `Chart3D.Inject(StackingColumnSeries3D)` method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -41,7 +41,7 @@ To render a [100% stacked column](https://www.syncfusion.com/javascript-ui-contr
 
 ## 100% Cylindrical stacked column chart
 
-To render a 100% cylindrical stacked column chart, set the [`columnFacet`](../../api/chart/series/#columnfacet) property to `Cylinder` in the chart series.
+To render a 100% cylindrical stacked column chart, set the [`columnFacet`](../../api/chart3d/series3DModel/#columnfacet) property to `Cylinder` in the chart series.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -72,34 +72,34 @@ To render a 100% cylindrical stacked column chart, set the [`columnFacet`](../..
 
 ## Series customization
 
-The following properties can be used to customize the `StackedColumn` series.
+The following properties can be used to customize the `100% Stacked Column` series.
 
-* [fill](../../api/chart/seriesModel/#fill) – Specifies the color of the series.
-* [opacity](../../api/chart/seriesModel/#opacity) – Specifies the opacity of [fill](../../api/chart/seriesModel/#fill).
+* [fill](../../api/chart3d/series3DModel/#fill) – Specifies the color of the series.
+* [opacity](../../api/chart3d/series3DModel/#opacity) – Specifies the opacity of [fill](../../api/chart3d/series3DModel/#fill).
 
 {% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/chart/chart-types-cs150/index.ts %}
+{% include code-snippet/chart3d/stacked-column-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/chart-types-cs150/index.html %}
+{% include code-snippet/chart3d/stacked-column-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs150" %}
+{% previewsample "page.domainurl/code-snippet/chart3d/stacked-column-cs3" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/chart/chart-types-cs150/index.js %}
+{% include code-snippet/chart3d/stacked-column-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/chart/chart-types-cs150/index.html %}
+{% include code-snippet/chart3d/stacked-column-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/chart-types-cs150" %}
+{% previewsample "page.domainurl/code-snippet/chart3d/stacked-column-cs3" %}
 {% endif %}

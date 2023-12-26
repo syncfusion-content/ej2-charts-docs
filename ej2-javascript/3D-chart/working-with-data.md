@@ -16,7 +16,7 @@ domainurl: ##DomainURL##
 
 ## Local Data
 
-A simple JSON data can be bound to the chart using [`dataSource`](../api/chart/series/) property in series. Now map the fields in JSON to [`xName`](../api/chart/series/#xname-string) and [`yName`](../api/chart/series/#yname-string) properties.
+A simple JSON data can be bound to the chart using [`dataSource`](../api/chart3d/series3DModel/#datasource) property in series. Now map the fields in JSON to [`xName`](../api/chart3d/series3DModel/#xname) and [`yName`](../api/chart3d/series3DModel/#yname) properties.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -47,7 +47,7 @@ A simple JSON data can be bound to the chart using [`dataSource`](../api/chart/s
 
 ## Remote Data
 
-The remote data can be bound to the chart using DataManager. The `DataManager` requires minimal information like webservice URL, adaptor and crossDomain to interact with service endpoint properly. Assign the instance of DataManager to the [`dataSource`](../api/chart/series/#datasource-object---datamanager) property in series and map the fields of data to [`xName`](../api/chart/series/#xname-string) and [`yName`](../api/chart/series/#yname-string) properties. You can also use the [`query`](../api/chart/series/#query-string) property of the series to filter the data.
+The remote data can be bound to the chart using DataManager. The `DataManager` requires minimal information like webservice URL, adaptor and crossDomain to interact with service endpoint properly. Assign the instance of DataManager to the [`dataSource`](../api/chart3d/series3DModel/#datasource) property in series and map the fields of data to [`xName`](../api/chart3d/series3DModel/#xname) and [`yName`](../api/chart3d/series3DModel/#yname) properties. You can also use the [`query`](../api/chart3d/series3DModel/#query) property of the series to filter the data.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -109,7 +109,7 @@ The remote data can be bound to the chart using DataManager. The `DataManager` r
 
 ## Empty points
 
-The Data points that uses the `null` or `undefined` as value are considered as empty points. Empty data points are ignored and not plotted in the Chart. When the data is provided by using the points property, By using `emptyPointSettings` property in series, you can customize the empty point. Default `mode` of the empty point is `Gap`.
+The Data points that uses the `null` or `undefined` as value are considered as empty points. Empty data points are ignored and is not plotted in the Chart. When the data is provided by using the points property, by using [`emptyPointSettings`](../api/chart3d/threeDimensionalEmptyPointSettingsModel/) property in series, the empty can be customized. Default [`mode`](../api/chart3d/threeDimensionalEmptyPointSettingsModel/#mode) of the empty point is `Gap`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -140,7 +140,7 @@ The Data points that uses the `null` or `undefined` as value are considered as e
 
 **Customizing empty point**
 
-Specific color for empty point can be set by `fill` property in `emptyPointSettings`.
+Specific color for empty point can be set by [`fill`](../api/chart3d/threeDimensionalEmptyPointSettingsModel/#fill) property in [`emptyPointSettings`](../api/chart3d/threeDimensionalEmptyPointSettingsModel/).
 
 {% if page.publishingplatform == "typescript" %}
 
