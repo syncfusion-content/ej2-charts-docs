@@ -11,37 +11,45 @@ domainurl: ##DomainURL##
 
 # Accessibility in ##Platform_Name## 3D Chart control
 
-Accessibility is achieved in the 3D chart control through WAI-ARIA standard and keyboard navigation. The 3D chart features can be effectively accessed through assistive technologies such as screen readers.
+The Chart component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
-## WAI-ARIA
+The accessibility compliance for the Chart component is outlined below.
 
-WAI-ARIA (Accessibility Initiative – Accessible Rich Internet Applications) defines a way to increase the accessibility of web pages, dynamic content, and user interface components developed with AJAX, HTML, JavaScript, and related technologies. ARIA provides additional semantics to describe the role, state, and functionality of web components.
+| Accessibility Criteria | Compatibility |
+| -- | -- |
+| [WCAG 2.2 Support](../common/accessibility#accessibility-standards) | <img src="https://cdn.syncfusion.com/content/images/landing-page/intermediate.png" alt="Intermediate"> |
+| [Section 508 Support](../common/accessibility#accessibility-standards) | <img src="https://cdn.syncfusion.com/content/images/landing-page/intermediate.png" alt="Intermediate"> |
+| [Screen Reader Support](../common/accessibility#screen-reader-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Right-To-Left Support](../common/accessibility#right-to-left-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/intermediate.png" alt="Intermediate"> |
+| [Color Contrast](../common/accessibility#color-contrast) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Mobile Device Support](../common/accessibility#mobile-device-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Keyboard Navigation Support](../common/accessibility#keyboard-navigation-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Accessibility Checker Validation](../common/accessibility#ensuring-accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Axe-core Accessibility Validation](../common/accessibility#ensuring-accessibility) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
 
-The following ARIA attributes are used in the chart:
+<style>
+    .post .post-content img {
+        display: inline-block;
+        margin: 0.5em 0;
+    }
+</style>
+<div><img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> - All features of the component meet the requirement.</div>
 
-<!-- markdownlint-disable MD033 -->
-<table>
-<tr>
-<td><b>Element</b></td>
-<td><b>Default description</b></td>
-</tr>
-<tr>
-<td>Legend</td>
-<td>Reads the series name.</td>
-</tr>
-<tr>
-<td>Chart Title</td>
-<td>Reads the chart's title.</td>
-</tr>
-<tr>
-<td>Series Points</td>
-<td>Reads the Point x :  Point y value.</td>
-</tr>
-<tr>
-<td>Series Group</td>
-<td>Reads the series type with data points.</td>
-</tr>
-</table>
+<div><img src="https://cdn.syncfusion.com/content/images/landing-page/intermediate.png" alt="Intermediate"> - Some features of the component do not meet the requirement.</div>
+
+<div><img src="https://cdn.syncfusion.com/content/images/landing-page/no.png" alt="No"> - The component does not meet the requirement.</div>
+
+
+## WAI-ARIA attributes
+
+The 3D Chart component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to meet the accessibility. The following ARIA attributes are used in the Chart component:
+
+* img (role)
+* button (role)
+* region (role)
+* aria-label (attribute)
+* aria-hidden (attribute)
+* aria-pressed (attribute)
 
 ## Keyboard navigation
 
@@ -60,9 +68,4 @@ Interaction Keys |Description
 <kbd>Down/Left Arrow</kbd> |Moves the focus to the legend left side from the selected legend.
 <kbd>Up/Right Arrow</kbd> | Moves the focus to the legend right side from the selected legend.
 <kbd>Enter/Space</kbd> |Toggles the visibility of the corresponding series.
-<kbd>Ctrl + +</kbd> |Zoom-in the chart.
-<kbd>Ctrl + -</kbd> |Zoom-out the chart.
-<kbd>Down/Up Arrow</kbd> |Pan the chart vertically.
-<kbd>Left/Right Arrow</kbd> |Pan the chart horizontally.
-<kbd>R</kbd> |Reset the zoomed chart.
 <kbd>Ctrl + P</kbd> |Print the chart.

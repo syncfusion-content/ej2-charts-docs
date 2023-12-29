@@ -44,7 +44,7 @@ Data label can be added to a chart series by enabling the [`visible`](../api/ch
 
 ## Position
 
-The [`position`](../api/chart3d/dataLabelStyleModel/#position) property is used to place the label either on `Top`, `Middle`,`Bottom` or `Outer` (outer is applicable for column and bar type series).
+The [`position`](../api/chart3d/dataLabelStyleModel/#position) property is used to place the label either on `Top`, `Middle`, or `Bottom`.
 
 {% if page.publishingplatform == "typescript" %}
 
