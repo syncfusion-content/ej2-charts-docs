@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Column in ##Platform_Name## 3D Chart control | Syncfusion
-description: Learn here all about 3D Column in Syncfusion ##Platform_Name## 3D  qa Chart control of Syncfusion Essential JS 2 and more.
+title: Column Chart in ##Platform_Name## 3D Chart control | Syncfusion
+description: Learn here all about column chart in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Column 
+control: 3D Chart 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Column 3D Chart in ##Platform_Name## control
+# Column Chart in ##Platform_Name## 3D Chart control
 
-## Column
+## Column chart
 
 To render a [column series](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/column-chart), use series [`type`](../../api/chart3d/series3DModel/#type) as `Column` and inject `ColumnSeries3D` module using `Chart3D.Inject(ColumnSeries3D)` method.
 
@@ -74,7 +74,7 @@ The [`columnSpacing`](../../api/chart3d/series3DModel/#columnspacing) and [`colu
 
 ## Grouped column
 
-The data points can be grouped in the bar type charts by using the [`groupName`](../../api/chart3d/series3DModel/#groupname) property. Data points with same group name are grouped together.
+The data points can be grouped in the column type charts by using the [`groupName`](../../api/chart3d/series3DModel/#groupname) property. Data points with same group name are grouped together.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -105,7 +105,7 @@ The data points can be grouped in the bar type charts by using the [`groupName`]
 
 ## Cylindrical column chart
 
-To render a cylindrical bar chart, set the [`columnFacet`](../../api/chart3d/series3DModel/#columnfacet) property to `Cylinder` in the chart series.
+To render a cylindrical column chart, set the [`columnFacet`](../../api/chart3d/series3DModel/#columnfacet) property to `Cylinder` in the chart series.
 
 {% if page.publishingplatform == "typescript" %}
 

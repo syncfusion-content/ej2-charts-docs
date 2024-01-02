@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Stacked column in ##Platform_Name## 3D Chart control | Syncfusion
-description: Learn here all about Stacked column in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
+title: 100% Stacked Column Chart in ##Platform_Name## 3D Chart control | Syncfusion
+description: Learn here all about 100% stacked column chart in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Stacked column 
+control: 3D Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Stacked column in ##Platform_Name## 3D Chart control
+# 100% Stacked column chart in ##Platform_Name## 3D Chart control
 
 To render a [100% stacked column](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/100-stacked-column-chart) series, use series [`type`](../../api/chart3d/series3DModel/#type) as `StackingColumn100` and inject `StackingColumnSeries3D` module using `Chart3D.Inject(StackingColumnSeries3D)` method.
 

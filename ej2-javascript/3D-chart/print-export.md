@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Chart print in ##Platform_Name## 3D Chart control | Syncfusion
-description: Learn here all about Chart print in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
+title: Print in ##Platform_Name## 3D Chart control | Syncfusion
+description: Learn here all about chart print in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Chart print 
+control: 3D Chart 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##

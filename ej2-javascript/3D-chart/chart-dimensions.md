@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Chart dimensions in ##Platform_Name## 3D Chart control | Syncfusion
-description: Learn here all about Chart dimensions in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
+description: Learn here all about chart dimensions in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Chart dimensions 
+control: 3D Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## Size for Container
 
-Chart can render to its container size. The size can be set via inline or CSS as demonstrated below.
+Chart can be rendered to its container size and it can be set via inline or CSS as demonstrated below.
 
 ```javascript
     <div id='container'>

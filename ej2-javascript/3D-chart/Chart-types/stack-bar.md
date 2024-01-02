@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Stack bar in ##Platform_Name## 3D Chart control | Syncfusion
-description: Learn here all about Stack bar in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
+title: Stacked Bar Chart  in ##Platform_Name## 3D Chart control | Syncfusion
+description: Learn here all about Stacked bar chart in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Stack bar 
+control: 3D Chart 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Stack bar in ##Platform_Name## 3D Chart control
+# Stack bar chart in ##Platform_Name## 3D Chart control
 
-## Stacked bar
+## Stacked bar chart
 
 To render a stacked bar series, use series [`type`](../../api/chart3d/series3DModel/#type) as `StackingBar` and inject `StackingBarSeries3D` module using `Chart3D.Inject(StackingBarSeries3D)` method.
 

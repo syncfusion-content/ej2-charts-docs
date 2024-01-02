@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Bar in ##Platform_Name## 3D Chart control | Syncfusion
-description: Learn here all about Bar in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
+title: Bar Chart in ##Platform_Name## 3D Chart control | Syncfusion
+description: Learn here all about bar chart in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Bar 
+control: 3D Chart 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# 3D Bar Chart in ##Platform_Name## control
+# Bar Chart in ##Platform_Name## 3D Chart control
 
-## Bar
+## Bar chart
 
 To render a [bar series](https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/bar-chart), use series [`type`](../../api/chart3d/series3DModel/#type) as `Bar` and inject `BarSeries3D` module using `Chart3D.Inject(BarSeries3D)` method.
 

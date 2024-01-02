@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tooltip in ##Platform_Name## 3D Chart control | Syncfusion
-description: Learn here all about Tooltip in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
+description: Learn here all about tooltip in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Tooltip 
 publishingplatform: ##Platform_Name##
@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD036 -->
 
-3D Chart will display details about the points through tooltip, when the mouse is moved over the point.
+3D Chart will display details about the points through tooltip, when the mouse is moved over the specific point.
 
 ## Default tooltip
 

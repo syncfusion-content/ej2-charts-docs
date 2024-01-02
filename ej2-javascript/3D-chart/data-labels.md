@@ -1,15 +1,17 @@
 ---
 layout: post
 title: Data labels in ##Platform_Name## 3D Chart control | Syncfusion
-description: Learn here all about Data labels in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
+description: Learn here all about data labels in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Data labels 
+control: 3D Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 # Data labels in ##Platform_Name## 3D Chart control
+
+Data labels are fields that includes information about the sample point connected to an output.
 
 Data label can be added to a chart series by enabling the [`visible`](../api/chart3d/dataLabelStyleModel/#visible) option in the dataLabel. By default, the labels will arrange smartly without overlapping.
 
@@ -73,7 +75,7 @@ The [`position`](../api/chart3d/dataLabelStyleModel/#position) property is used 
 {% previewsample "page.domainurl/code-snippet/chart3d/data-label-cs2" %}
 {% endif %}
 
-## Data Label Template
+## Template
 
 Label content can be formatted by using the template option. Inside the template, the placeholder text `${point.x}` and `${point.y}` can be added to display corresponding data points x & y value. Using [`template`](../api/chart3d/dataLabelStyleModel/#template) property, the data label template can be set.
 
@@ -104,7 +106,7 @@ Label content can be formatted by using the template option. Inside the template
 {% previewsample "page.domainurl/code-snippet/chart3d/data-label-cs3" %}
 {% endif %}
 
-## Text Mapping
+## Text mapping
 
 Text from the data source can be mapped using [`name`](../api/chart3d/dataLabelStyleModel/#name) property.
 
@@ -256,7 +258,7 @@ Data label for the chart can be formatted using [`format`](../api/chart3d/dataLa
 
 ## Customization
 
-`stroke` and `border` of data label can be customized using [`fill`](../api/chart3d/dataLabelStyleModel/#fill) and [`border`](../api/chart3d/dataLabelStyleModel/#border) properties.
+The `stroke` and `border` of data label can be customized using [`fill`](../api/chart3d/dataLabelStyleModel/#fill) and [`border`](../api/chart3d/dataLabelStyleModel/#border) properties.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -285,7 +287,7 @@ Data label for the chart can be formatted using [`format`](../api/chart3d/dataLa
 {% previewsample "page.domainurl/code-snippet/chart3d/data-label-cs7" %}
 {% endif %}
 
-## Customizing Specific Point
+## Customizing specific point
 
 Specific label can be customized by using [`textRender`](../api/chart3d/i3dtextrendereventargs/) event.  The `textRender` event allows you to change the text for the point.
 

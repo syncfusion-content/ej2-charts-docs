@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Selection in ##Platform_Name## 3D Chart control | Syncfusion
-description: Learn here all about Selection in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
+description: Learn here all about selection in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Selection 
+control: 3D Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##

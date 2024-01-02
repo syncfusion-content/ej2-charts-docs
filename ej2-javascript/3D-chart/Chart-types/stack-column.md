@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Stack column in ##Platform_Name## 3D Chart control | Syncfusion
-description: Learn here all about Stack column in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
+title: Stacked Column Chart in ##Platform_Name## 3D Chart control | Syncfusion
+description: Learn here all about stacked column chart in Syncfusion ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Stack column 
+control: 3D Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Stack column in ##Platform_Name## 3D Chart control
+# Stacked column chart in ##Platform_Name## 3D Chart control
 
-## Stacked column
+## Stacked column chart
 
 To render a stacked column series, use series [`type`](../../api/chart3d/series3DModel/#type) as `StackingColumn` and inject `StackingColumnSeries3D` module using `Chart3D.Inject(StackingColumnSeries3D)` method.
 
@@ -105,7 +105,7 @@ To render a cylindrical stacked column chart, set the [`columnFacet`](../../api/
 
 ## Series customization
 
-The following properties can be used to customize the stacked `stacked column` series.
+The following properties can be used to customize the `stacked column` series.
 
 * [fill](../../api/chart3d/series3DModel/#fill) – Specifies the color of the series.
 * [opacity](../../api/chart3d/series3DModel/#opacity) – Specifies the opacity of [fill](../../api/chart3d/series3DModel/#fill).
