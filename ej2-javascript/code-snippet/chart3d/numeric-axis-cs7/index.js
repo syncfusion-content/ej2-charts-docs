@@ -4,7 +4,9 @@ var chartData = [{ x: 1, y: 7 }, { x: 2, y: 1 }, { x: 3, y: 1 }, { x: 4, y: 14 }
     { x: 19, y: 7 }, { x: 20, y: 10 }];
 var chart3D = new ej.charts.Chart3D({
     primaryXAxis: {
-        valueType: 'Double'
+        valueType: 'Double',
+        // Set the rangePadding as auto in X Axis
+        rangePadding: 'Auto'
     },
     primaryYAxis: {
         rangePadding: 'Auto'

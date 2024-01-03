@@ -5,7 +5,7 @@ import {Chart3D, Category3D, Legend3D, ColumnSeries3D, Tooltip3D, Highlight3D } 
 Chart3D.Inject(ColumnSeries3D, Category3D, Legend3D, Tooltip3D, Highlight3D);
 
 let chartData: any[] = [
-    { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },
+      { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },
       { month: 'Mar', sales: 34 }, { month: 'Apr', sales: 32 },
       { month: 'May', sales: 40 }, { month: 'Jun', sales: 32 },
       { month: 'Jul', sales: 35 }, { month: 'Aug', sales: 55 },

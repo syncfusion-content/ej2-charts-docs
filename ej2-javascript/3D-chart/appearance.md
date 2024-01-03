@@ -209,7 +209,7 @@ To customize the animation for a particular series, the [`animation`](../api/cha
 
 ## Chart rotation
 
-Chart can be roatated by using the [`enableRotation`](../api/chart3d/chart3DModel/#enablerotation) property in the chart.
+Chart can be rotated by using the [`enableRotation`](../api/chart3d/chart3DModel/#enablerotation) property in the chart.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -240,7 +240,7 @@ Chart can be roatated by using the [`enableRotation`](../api/chart3d/chart3DMode
 
 ## Chart title
 
-Chart can be given a title using [`title`](../api/chart3d/chart3DModel/#title) property, to show the information about the data plotted.
+Chart can be given a title by using [`title`](../api/chart3d/chart3DModel/#title) property, to show the information about the data plotted.
 
 {% if page.publishingplatform == "typescript" %}
 

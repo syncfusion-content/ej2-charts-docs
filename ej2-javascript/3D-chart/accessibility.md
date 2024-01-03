@@ -11,6 +11,8 @@ domainurl: ##DomainURL##
 
 # Accessibility in ##Platform_Name## 3D Chart control
 
+Accessibility is achieved in the chart control through WAI-ARIA standard and keyboard navigation. The chart features can be effectively accessed through assistive technologies such as screen readers.
+
 ## WAI-ARIA
 
 WAI-ARIA (Accessibility Initiative – Accessible Rich Internet Applications) defines a way to increase the accessibility of web pages, dynamic content, and user interface components developed with AJAX, HTML, JavaScript, and related technologies. ARIA provides additional semantics to describe the role, state, and functionality of web components.
