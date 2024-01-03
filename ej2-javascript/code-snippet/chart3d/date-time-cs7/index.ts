@@ -1,5 +1,5 @@
-import {Chart3D, DateTimeCategory3D, Legend3D, ColumnSeries3D, Tooltip3D, Highlight3D } from '@syncfusion/ej2-charts';
-Chart3D.Inject(ColumnSeries3D, DateTimeCategory3D, Legend3D, Tooltip3D, Highlight3D);
+import {Chart3D, DateTime3D, Legend3D, ColumnSeries3D, Tooltip3D, Highlight3D } from '@syncfusion/ej2-charts';
+Chart3D.Inject(ColumnSeries3D, DateTime3D, Legend3D, Tooltip3D, Highlight3D);
 
 let chartData: any[] = [
     { x: new Date(2017, 11, 20), y: 21 }, { x: new Date(2017, 11, 21), y: 24 },
@@ -11,7 +11,7 @@ let chartData: any[] = [
 
 let chart: Chart3D = new Chart3D({
     primaryXAxis: {
-        valueType: 'DateTimeCategory',
+        valueType: 'DateTime',
         rangePadding: 'Additional'
     },
     series: [

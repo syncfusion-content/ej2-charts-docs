@@ -46,7 +46,7 @@ The title for the axis can be added by using the [`title`](../api/chart3d/axis3D
 
 ## Title rotation
 
-The title can be rotated from 0 to 360 degree by using the [`titleRotation`](../api/chart/axis/#titlerotation) property.
+The title can be rotated from 0 to 360 degree by using the [`titleRotation`](../api/chart3d/axis3D/#titlerotation) property.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -109,7 +109,7 @@ The remote data can be bound to the chart using DataManager. The `DataManager` r
 
 ## Empty points
 
-The Data points that uses the `null` or `undefined` as value are considered as empty points. Empty data points are ignored and is not plotted in the Chart. When the data is provided by using the points property, by using [`emptyPointSettings`](../api/chart3d/threeDimensionalEmptyPointSettingsModel/) property in series, the empty can be customized. Default [`mode`](../api/chart3d/threeDimensionalEmptyPointSettingsModel/#mode) of the empty point is `Gap`.
+The Data points that uses the `null` or `undefined` as value are considered as empty points. Empty data points are ignored and is not plotted in the chart. When the data is provided by using the points property, by using [`emptyPointSettings`](../api/chart3d/threeDimensionalEmptyPointSettingsModel/) property in series, the empty can be customized. Default [`mode`](../api/chart3d/threeDimensionalEmptyPointSettingsModel/#mode) of the empty point is **Gap**.
 
 {% if page.publishingplatform == "typescript" %}
 

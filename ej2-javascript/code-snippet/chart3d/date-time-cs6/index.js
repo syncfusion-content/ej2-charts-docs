@@ -7,7 +7,7 @@ var chartData = [
 ];
 var chart3D = new ej.charts.Chart3D({
     primaryXAxis: {
-        valueType: 'DateTimeCategory',
+        valueType: 'DateTime',
         rangePadding: 'Round'
     },
     series: [

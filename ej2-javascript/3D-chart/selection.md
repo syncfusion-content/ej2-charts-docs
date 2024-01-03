@@ -25,7 +25,7 @@ We have different types of selection mode for selecting a data.
 
 ## Point
 
-To select a point, the [`selectionMode`](../api/chart3d/chart3DModel/#selectionmode) property is set to point.
+To select a point, set the [`selectionMode`](../api/chart3d/chart3DModel/#selectionmode) property to **Point**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -56,7 +56,7 @@ To select a point, the [`selectionMode`](../api/chart3d/chart3DModel/#selectionm
 
 ## Series
 
-To select a series, set the [`selectionMode`](../api/chart3d/chart3DModel/#selectionmode) to series.
+To select a series, set the [`selectionMode`](../api/chart3d/chart3DModel/#selectionmode) property to **Series**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -87,7 +87,7 @@ To select a series, set the [`selectionMode`](../api/chart3d/chart3DModel/#selec
 
 ## Cluster
 
-To select the points that corresponds to the same index in all the series, set the [`selectionMode`](../api/chart3d/chart3DModel/#selectionmode) property to cluster.
+To select the points that corresponds to the same index in all the series, set the [`selectionMode`](../api/chart3d/chart3DModel/#selectionmode) property to **Cluster**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -180,7 +180,7 @@ To select a point or series programmatically on a chart use [`selectedDataIndexe
 
 ## Selection through on legend
 
-To select a point or series through on legend use [`toggleVisibility`](../api/chart3d/threeDimensionalLegendSettingsModel/#togglevisibility) property. Also, use [`enableHighlight`](../api/chart3d/threeDimensionalLegendSettingsModel/#enablehighlight) property for highlighting the series through legend.
+To select a point or series through on legend use [`toggleVisibility`](../api/chart3d/legendSettingsModel/#togglevisibility) property. Also, use [`enableHighlight`](../api/chart3d/legendSettingsModel/#enablehighlight) property for highlighting the series through legend.
 
 {% if page.publishingplatform == "typescript" %}
 

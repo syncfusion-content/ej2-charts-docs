@@ -10,24 +10,24 @@ var chart3D = new ej.charts.Chart3D({
     tooltip: { 
         enable: true,
         header: 'Unemployment',
-        format: '<b>${point.x} : ${point.y}</b>'
+        format: '<b>${series.name} : ${point.y}</b>'
     },
-        primaryXAxis: {
-            valueType: 'Category',
-            labelRotation: -45,
-            labelPlacement: 'BetweenTicks'
-        },
-       series:[{
-            dataSource: chartData,
-            xName: 'month',
-            yName: 'sales',
-            type: 'Column'
-        }],
-        wallColor: 'transparent',
-        enableRotation: true,
-        rotation: 7,
-        tilt: 10,
-        depth: 100,
-
+    primaryXAxis: {
+        valueType: 'Category',
+        labelRotation: -45,
+        labelPlacement: 'BetweenTicks'
+    },
+   series:[{
+        dataSource: chartData,
+        xName: 'month',
+        yName: 'sales',
+        type: 'Column',
+        name: "Month"
+    }],
+    wallColor: 'transparent',
+    enableRotation: true,
+    rotation: 7,
+    tilt: 10,
+    depth: 100
 }, '#element');
 

@@ -44,11 +44,11 @@ The default color of series or points can be customized by providing a custom co
 
 ## Data point customization
 
-The color of individual data point or data points within a range can be customized using the options below.
+The color of an individual data point can be customized using the options below.
 
 ### Point color mapping
 
-The color for the points can be bound from the [`dataSource`](../api/chart3d/series3D/#datasource) for the series by using the [`pointColorMapping`](../api/chart3d/series3D/#pointcolormapping) property.
+The color for the points can be bound from the [`dataSource`](../api/chart3d/series3D/#datasource) for the series by utilizing the [`pointColorMapping`](../api/chart3d/series3D/#pointcolormapping) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -79,7 +79,7 @@ The color for the points can be bound from the [`dataSource`](../api/chart3d/ser
 
 ## Point level customization
 
-Data label and fill color of each data point can be customized with [`pointRender`](../api/chart3d/i3DPointRenderEventArgs/) and [`textRender`](../api/chart3d/i3dtextrendereventargs/) event.
+The data label and fill color of each data point can be customized using the [`pointRender`](../api/chart3d/i3DPointRenderEventArgs/) and [`textRender`](../api/chart3d/i3dtextrendereventargs/) events.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -116,7 +116,7 @@ Data label and fill color of each data point can be customized with [`pointRende
 
 **Customize the chart background**
 
-Using the [`background`](../api/chart3d/chart3DModel/#background) and [`border`](../api/chart3d/chart3DModel/#border) properties, the background color and border of the chart can be customized.
+The background color and border of the chart can be customized using the [`background`](../api/chart3d/chart3DModel/#background) and [`border`](../api/chart3d/chart3DModel/#border) properties.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -147,7 +147,7 @@ Using the [`background`](../api/chart3d/chart3DModel/#background) and [`border`]
 
 **Chart margin**
 
-The margin for the chart can be set from its container through [`margin`](../api/chart3d/chart3DModel/#margin) property.
+The chart's margin can be set from its container using the [`margin`](../api/chart3d/chart3DModel/#margin) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -360,7 +360,7 @@ The title can be aligned to the near, far, or center of the chart by using the [
 {% previewsample "page.domainurl/code-snippet/chart3d/appearance-cs10" %}
 {% endif %}
 
-### Title wrap
+### Title customization
 
 The [`titleStyle`](../api/chart3d/chart3DModel/#titlestyle) property of chart title provides options to customize the title by using the following properties.
 

@@ -15,7 +15,7 @@ let chart: Chart3D = new Chart3D({
     tooltip: { 
         enable: true,
         header: 'Unemployment',
-        format: '<b>${point.x} : ${point.y}</b>'
+        format: '<b>${series.name} : ${point.y}</b>'
     },
     primaryXAxis: {
         valueType: 'Category',
@@ -26,14 +26,14 @@ let chart: Chart3D = new Chart3D({
         dataSource: chartData,
         xName: 'month',
         yName: 'sales',
-        type: 'Column'
+        type: 'Column',
+        name: "Month"
     }],
     wallColor: 'transparent',
     enableRotation: true,
     rotation: 7,
     tilt: 10,
-    depth: 100,
-
+    depth: 100
 }, '#element');
 
 

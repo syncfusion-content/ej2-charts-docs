@@ -83,7 +83,7 @@ By default, tooltip track the mouse movement, but the tooltip can be set in fixe
 
 <!-- markdownlint-disable MD013 -->
 
-By default, tooltip shows information of x and y value in points. In addition to that, more information can be shown in tooltip by using the [`format`](../../api/chart3d/tooltipSettings/#format) property. For example the format `${point.x} : ${point.y}` shows series name and point x value.
+By default, tooltip shows information of x and y value in points. In addition to that, more information can be shown in tooltip by using the [`format`](../../api/chart3d/tooltipSettings/#format) property. For example the format `${series.name} : ${point.y}` shows series name and point x value.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -44,7 +44,7 @@ The rendered chart can be printed directly from the browser by calling the publi
 
 ## Export
 
-The rendered chart can be exported to `JPEG`, `PNG`, `SVG`, `PDF`, `XLSX`, or `CSV` format using the export method in chart. The input parameters for this method are `type` for format and `fileName` for result.
+The rendered chart can be exported to `JPEG`, `PNG`, `SVG`, or `PDF` format using the export method in chart. The input parameters for this method are `type` for format and `fileName` for result.
 
 {% if page.publishingplatform == "typescript" %}
 

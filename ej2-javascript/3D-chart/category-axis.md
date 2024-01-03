@@ -106,7 +106,7 @@ The range of the category axis can be customized using [`minimum`](../api/chart3
 
 ## Indexed category axis
 
-Category axis also can be rendered based on the index values of data source. This can be achieved by defining the [`isIndexed`](../api/chart3d/axis3D/#isindexed) property to `true` in the axis.
+Category axis also can be rendered based on the index values of data source. This can be achieved by defining the [`isIndexed`](../api/chart3d/axis3D/#isindexed) property to **true** in the axis.
 
 {% if page.publishingplatform == "typescript" %}
 
