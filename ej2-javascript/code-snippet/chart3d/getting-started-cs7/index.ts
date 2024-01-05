@@ -29,6 +29,7 @@ let chart: Chart3D = new Chart3D({
         xName: 'month',
         yName: 'sales',
         type: 'Column',
+        // Data label for 3d chart series
         dataLabel: {
             visible: true
         }

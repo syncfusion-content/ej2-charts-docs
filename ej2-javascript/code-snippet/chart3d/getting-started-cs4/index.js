@@ -18,6 +18,7 @@ var chart3D = new ej.charts.Chart3D({
     },
     series:[{
         dataSource: chartData,
+        name:'Sales',
         xName: 'month',
         yName: 'sales',
         type: 'Column'
