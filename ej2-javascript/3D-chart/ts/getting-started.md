@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Getting started with JavaScript 3D Chart control | Syncfusion
-description:  Checkout and learn about Getting started with JavaScript 3D Chart control of Syncfusion Essential JS 2 and more details.
+description:  Checkout and learn about getting started with JavaScript 3D Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
-publishingplatform: JavaScript
+publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
