@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## 3D Chart Control | Syncfusion
-description:  Checkout and learn about getting started with ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more details.
+title: Getting started with ##Platform_Name## 3D Chart control | Syncfusion
+description:  Checkout and learn about Getting started with ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-javascript
 control: Getting started 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting started in ##Platform_Name## 3D Chart Control
+# Getting started in ##Platform_Name## 3D Chart control
 
 This section explains how to create a simple 3D Chart and configure its available functionalities in TypeScript using Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack) seed repository.
 
@@ -266,4 +266,4 @@ The tooltip is useful when you cannot display information by using the data labe
           
 {% previewsample "page.domainurl/code-snippet/chart3d/getting-started-cs7" %}
 
-> You can refer to our [JavaScript 3D Charts](https://www.syncfusion.com/javascript-ui-controls/js-3d-charts) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript 3D Charts example](https://ej2.syncfusion.com/demos/#/material3/three-dimension-chart/column.html) that shows various 3D Chart types and how to represent time-dependent data, showing trends in data at equal intervals.
+> You can refer to our [JavaScript 3D Charts](https://www.syncfusion.com/javascript-ui-controls/js-3d-charts) feature tour page for its groundbreaking feature representations. You can also explore our [JavaScript 3D Charts example](https://ej2.syncfusion.com/demos/#/bootstrap5/three-dimension-chart/column.html) that shows various 3D Chart types and how to represent time-dependent data, showing trends in data at equal intervals.
