@@ -160,7 +160,7 @@ By default, the pie series will be rendered when assigning the JSON data to the 
 {% include code-snippet/circular-chart/getting-started/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/circular-chart/getting-started/js/index.html %}
+{% include code-snippet/circular-chart/getting-started/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
