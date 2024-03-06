@@ -21,7 +21,7 @@ let circularchart: CircularChart3D = new CircularChart3D({
                 name: 'x',
                 position: 'Outside',
                 font: {
-                    fontWeight: '600',
+                    fontWeight: '600'
                 },
                 connectorStyle: { length: '40px' }
             }
