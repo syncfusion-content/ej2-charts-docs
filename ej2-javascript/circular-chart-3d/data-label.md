@@ -106,7 +106,7 @@ Label content can be formatted by using the template option. Inside the template
 
 ## Connector Line
 
-Connector line will be visible when the data label is placed `outside` the chart. The connector line can be customized using the `type`, `color`, `width`, `length` and `dashArray` properties
+Connector line will be visible when the data label is placed `outside` the chart. The connector line can be customized using the `color`, `width`, `length` and `dashArray` properties.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -168,7 +168,7 @@ Text from the data source can be mapped to data label using `name` property.
 
 ## Format
 
-Data label for the Circular Chart 3D can be formatted using [`format`](../api/accumulation-chart/accumulationChartModel/#format) property. You can use the global formatting options, such as 'n', 'p', and 'c'.
+Data label for the Circular Chart 3D can be formatted using `format` property. You can use the global formatting options, such as 'n', 'p', and 'c'.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -283,37 +283,6 @@ Individual text can be customized using the `textRender` event.
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/circular-chart/datalabel/custom" %}
-{% endif %}
-
-## Text wrap
-
-When the data label text exceeds the container, the text can be wrapped by using `textWrap` property. End user can also wrap the data label text based on `maxWidth` property.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/circular-chart/datalabel/text-wrap/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/circular-chart/datalabel/text-wrap/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/circular-chart/datalabel/text-wrap" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/circular-chart/datalabel/text-wrap/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/circular-chart/datalabel/text-wrap/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/circular-chart/datalabel/text-wrap" %}
 {% endif %}
 
 ## Show percentages in data labels of pie chart
