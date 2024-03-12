@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Title and sub title in ##Platform_Name## Circular Chart 3D control
 
-# Title
+## Title
 
 Circular Chart 3D can be given a title using `title` property, to show the information about the data plotted.
 
@@ -42,7 +42,7 @@ Circular Chart 3D can be given a title using `title` property, to show the infor
 {% previewsample "page.domainurl/code-snippet/circular-chart/user-interaction/title" %}
 {% endif %}
 
-# Title customization
+## Title customization
 
 Circular Chart 3D can be customizing a title using `titleStyle` property.
 
