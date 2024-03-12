@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Data label in ##Platform_Name## Circular Chart 3D control
 
-Data label can be added to a Circular Chart 3D series by enabling the `visible` option in the dataLabel property.
+Data label can be added to a Circular Chart 3D series by enabling the `visible` option in the `dataLabel` property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -71,37 +71,6 @@ Circular Chart 3D provides support for placing the data label either `inside` or
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/circular-chart/datalabel/position" %}
-{% endif %}
-
-## Smart labels
-
-Data labels will be arranged smartly without overlapping with each other. You can enable or disable this feature using the `enableSmartLabels` property.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/circular-chart/datalabel/smartlabels/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/circular-chart/datalabel/smartlabels/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/circular-chart/datalabel/smartlabels" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/circular-chart/datalabel/smartlabels/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/circular-chart/datalabel/smartlabels/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/circular-chart/datalabel/smartlabels" %}
 {% endif %}
 
 ## Data label template

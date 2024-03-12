@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Circular Chart 3D print in ##Platform_Name## Circular Chart 3D control | Syncfusion
-description: Learn here all about Chart print in Syncfusion ##Platform_Name## Circular Chart 3D control of Syncfusion Essential JS 2 and more.
+description: Learn here all about Circular Chart 3D print in Syncfusion ##Platform_Name## Circular Chart 3D control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Circular Chart 3D print 
 publishingplatform: ##Platform_Name##

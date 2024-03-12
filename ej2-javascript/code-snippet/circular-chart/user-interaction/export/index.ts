@@ -1,4 +1,9 @@
-var circularchart = new ej.charts.CircularChart3D({
+
+
+
+import { CircularChart3D, PieSeries3D, CircularChartLegend3D, CircularChartExport3D } from '@syncfusion/ej2-charts';
+CircularChart3D.Inject(PieSeries3D, CircularChartLegend3D, CircularChartExport3D);
+let circularchart: CircularChart3D = new CircularChart3D({
     series: [
         {
             dataSource: [
@@ -17,6 +22,9 @@ var circularchart = new ej.charts.CircularChart3D({
     legendSettings: { visible: false }
 }, '#element');
 
-document.getElementById('print').onclick = () => {
-    circularchart.print();
+document.getElementById('export').onclick = () => {
+    circularchart.exportModule.export('PNG', 'result');
 };
+
+
+
