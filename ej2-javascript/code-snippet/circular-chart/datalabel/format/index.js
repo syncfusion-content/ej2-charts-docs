@@ -2,10 +2,10 @@ var circularchart = new ej.charts.CircularChart3D({
     series: [
         {
             dataSource: [
-                { x: 'Jan', y: 13, text: 'Jan: 3' },
-                { x: 'Feb', y: 13, text: 'Feb: 3.5' },
-                { x: 'Mar', y: 7, text: 'Mar: 7' },
-                { x: 'Apr', y: 13, text: 'Apr: 13.5' }
+                { x: 'Jan', y: 13 },
+                { x: 'Feb', y: 13 },
+                { x: 'Mar', y: 7 },
+                { x: 'Apr', y: 13 }
             ],
             xName: 'x',
             yName: 'y',
