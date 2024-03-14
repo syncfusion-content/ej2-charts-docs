@@ -11,12 +11,7 @@ var circularchart = new ej.charts.CircularChart3D({
                 { x: 'Miscellaneous', y: 1, text: '1%' }
             ],
             xName: 'x',
-            yName: 'y',
-            dataLabel: {
-                visible: true,
-                name: 'text',
-                font: { color: 'white', size: '10px' }
-            }
+            yName: 'y'
         }
     ],
     tilt: -45,

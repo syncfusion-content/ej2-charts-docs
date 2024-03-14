@@ -1,8 +1,8 @@
 
 
 
-import { CircularChart3D, PieSeries3D, CircularChartDataLabel3D, CircularChartLegend3D } from '@syncfusion/ej2-charts';
-CircularChart3D.Inject(PieSeries3D, CircularChartDataLabel3D, CircularChartLegend3D);
+import { CircularChart3D, PieSeries3D, CircularChartLegend3D } from '@syncfusion/ej2-charts';
+CircularChart3D.Inject(PieSeries3D, CircularChartLegend3D);
 let circularchart: CircularChart3D = new CircularChart3D({
     series: [
         {
@@ -16,12 +16,7 @@ let circularchart: CircularChart3D = new CircularChart3D({
                 { x: 'Miscellaneous', y: 1, text: '1%' }
             ],
             xName: 'x',
-            yName: 'y',
-            dataLabel: {
-                visible: true,
-                name: 'text',
-                font: { color: 'white', size: '10px' }
-            }
+            yName: 'y'
         }
     ],
     tilt: -45,
