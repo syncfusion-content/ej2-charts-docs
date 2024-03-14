@@ -196,8 +196,3 @@ Individual points can be customized using the `pointRender` event.
 
 {% previewsample "page.domainurl/code-snippet/circular-chart/pie-donut/customization" %}
 {% endif %}
-
-## See Also
-
-* [Data label](./data-label/)
-* [Grouping](./grouping/)
