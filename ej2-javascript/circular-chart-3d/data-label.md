@@ -104,7 +104,7 @@ Label content can be formatted by using the template option. Inside the template
 {% previewsample "page.domainurl/code-snippet/circular-chart/datalabel/template" %}
 {% endif %}
 
-## Connector Line
+## Connector line
 
 Connector line will be visible when the data label is placed `outside` the chart. The connector line can be customized using the `color`, `width`, `length` and `dashArray` properties.
 
