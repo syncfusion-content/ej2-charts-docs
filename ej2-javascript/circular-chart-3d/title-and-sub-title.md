@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 ## Title
 
-Circular Chart 3D can be given a title using `title` property, to show the information about the data plotted.
+The Circular Chart 3D can be given a title by using the `title` property to display information about the plotted data.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,7 +44,7 @@ Circular Chart 3D can be given a title using `title` property, to show the infor
 
 ## Title customization
 
-Circular Chart 3D can be customizing a title using `titleStyle` property.
+The title of the Circular Chart 3D can be customized using the `titleStyle` property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -75,7 +75,7 @@ Circular Chart 3D can be customizing a title using `titleStyle` property.
 
 ## Subtitle
 
-Circular Chart 3D can be given a subtitle using `subTitle` property, to show the information about the data plotted.
+The Circular Chart 3D can be given a subtitle by using the `subTitle` property to display information about the plotted data.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -106,7 +106,7 @@ Circular Chart 3D can be given a subtitle using `subTitle` property, to show the
 
 ## Subtitle customization
 
-Circular Chart 3D can be customizing a subtitle using `subTitleStyle` property, to show the information about the data plotted.
+The subtitle of the Circular Chart 3D can be customized using the `subTitleStyle` property.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Circular Chart 3D print in ##Platform_Name## Circular Chart 3D control | Syncfusion
-description: Learn here all about Circular Chart 3D print in Syncfusion ##Platform_Name## Circular Chart 3D control of Syncfusion Essential JS 2 and more.
+title: Print and Export in ##Platform_Name## Circular Chart 3D control | Syncfusion
+description: Learn here all about Print and Export in Syncfusion ##Platform_Name## Circular Chart 3D control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Circular Chart 3D print 
+control: Print and Export
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Circular Chart 3D print in ##Platform_Name## Circular Chart 3D control
+# Print and Export in ##Platform_Name## Circular Chart 3D control
 
 ## Print
 
-The rendered Circular Chart 3D can be printed directly from the browser by calling the public method print.
+The rendered Circular Chart 3D can be printed directly from the browser by calling the public method `print`. The ID of the Circular Chart 3D div element must be passed as the input parameter to that method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,8 +44,7 @@ The rendered Circular Chart 3D can be printed directly from the browser by calli
 
 ## Export
 
-The rendered Circular Chart 3D can be exported to `Image`(jpeg or png) or `SVG` or `PDF` format by using the export method.
-Input parameters for this method are `Export` type for `format` and `fileName` of result.
+The rendered Circular Chart 3D can be exported to `JPEG`, `PNG`, or `SVG` format using the `export` method. We can export the Circular Chart 3D as a `PDF` format using the `pdfExport` method. The input parameters for this method are `type` for the format and `fileName` for the result.
 
 {% if page.publishingplatform == "typescript" %}
 

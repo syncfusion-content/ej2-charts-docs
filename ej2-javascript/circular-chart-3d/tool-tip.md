@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Tooltip in ##Platform_Name## Circular Chart 3D control
 
-Tooltip for the Circular Chart 3D can be enabled by using the `enable` property.
+The Circular Chart 3D will display details about the points through a tooltip, when the mouse is moved over a specific point. By default, the tooltip is not visible. It can be enabled by using the `enable` property in `tooltip` to **true**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,7 +44,7 @@ Tooltip for the Circular Chart 3D can be enabled by using the `enable` propert
 
 ## Header
 
-We can specify header for the tooltip using `header` property.
+We can specify a header for the tooltip by using the `header` property in `tooltip`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -75,7 +75,7 @@ We can specify header for the tooltip using `header` property.
 
 ## Format
 
-By default, tooltip shows information of x and y value in points. In addition to that, you can show more information in tooltip. For example the format `${series.name} ${point.x}` shows series name and point x value.
+By default, the tooltip shows information about the x and y values in points. Additionally, more information can be displayed in the tooltip by using the `format` property. For example, the format `${series.name} : ${point.x}` shows the series name and the point's x value.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -104,9 +104,9 @@ By default, tooltip shows information of x and y value in points. In addition to
 {% previewsample "page.domainurl/code-snippet/circular-chart/user-interaction/tooltip-format" %}
 {% endif %}
 
-## Tooltip format
+## Tooltip template
 
-Any HTML element can be displayed in the tooltip by using the `template` property.
+Any HTML elements can be displayed in the tooltip by using the `template` property in the tooltip.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -137,7 +137,7 @@ Any HTML element can be displayed in the tooltip by using the `template` propert
 
 ## Fixed tooltip
 
-By default, tooltip track the mouse movement, but you can set a fixed position for the tooltip by using the `location` property.
+By default, the tooltip tracks the mouse movement, but it can be set to a fixed position using the `location` property in `tooltip`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -168,7 +168,7 @@ By default, tooltip track the mouse movement, but you can set a fixed position f
 
 ## Customization
 
-The `fill` and `border` properties are used to customize the background color and border of the tooltip respectively. The `textStyle` property in the tooltip is used to customize the font of the tooltip text. The `highlightColor` property can be used to change the color of the data point when hovering.
+The `fill` and `border` properties are used to customize the background color and border of the tooltip, respectively. The `textStyle` property in the tooltip is used to customize the font of the tooltip text. Additionally, the `highlightColor` property can be used to change the color of the data point when hovering.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -199,7 +199,7 @@ The `fill` and `border` properties are used to customize the background color an
 
 ## To customize individual tooltip
 
-Using `tooltipRender` event, you can customize a tooltip for particular point.
+Using the `tooltipRender` event, you can customize tooltip values for a particular point.
 
 {% if page.publishingplatform == "typescript" %}
 

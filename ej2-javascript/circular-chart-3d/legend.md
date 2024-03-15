@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Legend in ##Platform_Name## Circular Chart 3D control
 
-As like a chart, the legend is also available for Circular Chart 3D, which gives information about the points. By default, the legend will be placed on the right, if the width of the chart is high or will be placed on the bottom, if the height of the chart is high. Other customization features regarding the legend element are same as the `chart legend`. Here, the legend for a point can be collapsed by giving the empty string to the x value of the point.
+Legend provides information about the series rendered in the Circular Chart 3D. It can be added by enabling the `visible` option in the `legendSettings` property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,7 +44,7 @@ As like a chart, the legend is also available for Circular Chart 3D, which gives
 
 ## Position and alignment
 
-By using the position property, you can position the legend at the `left`, `right`, `top` or `bottom` of the chart. You can also align the legend to `center`, `far` or `near` of the chart using the alignment property.
+By using the `position` property, the legend can be positioned at the `left`, `right`, `top` or `bottom` of the Circular Chart 3D. By default, the legend will be positioned to the right of the Circular Chart 3D. Additionally, you can align the legend to the `center`,`far` or `near` of the chart using the `alignment` property. 
  
 {% if page.publishingplatform == "typescript" %}
 
@@ -75,7 +75,7 @@ By using the position property, you can position the legend at the `left`, `
 
 ## Legend reverse
 
-You can reverse the order of the legend items by using the `reverse` property. By default, legend for the first series in the collection will be placed first.
+You can reverse the order of the legend items by using the `reverse` property in `legendSettings`. By default, the legend for the first series in the collection will be placed first.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -106,7 +106,7 @@ You can reverse the order of the legend items by using the `reverse` property. B
 
 ## Legend shape
 
-To change the legend icon shape, use the `legendShape` property in the `series`. By default, legend icon shape is `seriesType`.
+To change the legend icon shape, use the `legendShape` property in the `series`. By default, the legend icon shape is set to `seriesType`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -137,7 +137,7 @@ To change the legend icon shape, use the `legendShape` property in the `series
 
 ## Legend size
 
-The legend size can be changed by using the `width` and `height` properties of the `legendSettings`.
+The legend size can be changed by using the `width` and `height` properties in `legendSettings`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -168,7 +168,7 @@ The legend size can be changed by using the `width` and `height` properties of t
 
 ## Legend item size
 
-You can customize the size of the legend items by using the `shapeHeight` and `shapeWidth` properties.
+The size of the legend items can be customised by using the `shapeHeight` and `shapeWidth` properties in `legendSettings`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -199,7 +199,7 @@ You can customize the size of the legend items by using the `shapeHeight` and `s
 
 ## Paging for legend
 
-Paging will be enabled by default, when the legend items exceeds the legend bounds. You can view the each legend item by navigating between the pages using the navigation buttons.
+Paging will be enabled by default when the legend items exceed the legend bounds. Each legend item can be viewed by navigating between the pages using navigation buttons.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -230,7 +230,7 @@ Paging will be enabled by default, when the legend items exceeds the legend boun
 
 ## Legend text wrap
 
-When the legend text exceeds the container, the text can be wrapped by using `textWrap` Property. End user can also wrap the legend text based on the `maximumLabelWidth` property.
+When the legend text exceeds the container, the text can be wrapped using the `textWrap` property in `legendSettings`. End users can also wrap the legend text based on the `maximumLabelWidth` property in `legendSettings`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -261,7 +261,7 @@ When the legend text exceeds the container, the text can be wrapped by using `te
 
 ## Legend title
 
-You can set title for legend using `title` property in `legendSettings`. You can also customize the `fontStyle`, `size`, `fontWeight`, `color`, `textAlignment`, `fontFamily`, `opacity` and `textOverflow` of legend title. `titlePosition` is used to set the legend position in `Top`, `Left` and `Right` position. `maximumTitleWidth` is used to set the width of the legend title. By default, it will be `100px`.
+You can set a title for the legend using the `title` property in `legendSettings`. The `size`, `color`, `opacity`, `fontStyle`, `fontWeight`, `fontFamily`, `textAlignment`, and `textOverflow` of the legend title can be customized using the `titleStyle` property in `legendSettings`. The `titlePosition` is used to set the legend position at the `top`, `left` and `right`. The `maximumTitleWidth` is used to set the width of the legend title, which defaults to `100px`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -292,7 +292,7 @@ You can set title for legend using `title` property in `legendSettings`. You can
 
 ## Arrow page navigation
 
-By default, the page number will be enabled while legend paging. Now, you can disable that page number and also you can get left and right arrows for page navigation. You have to set `false` value to `enablePages` to get this support.
+The page number will always be visible when using legend paging. Now, it is possible to disable the page number and enable page navigation with the left and right arrows. To render the arrow page navigation, set the `enablePages` property to **false**.
 
 {% if page.publishingplatform == "typescript" %}
 

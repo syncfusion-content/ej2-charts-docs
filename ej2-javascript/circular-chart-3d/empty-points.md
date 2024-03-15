@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Empty points in ##Platform_Name## Circular Chart 3D control
 
-The data points those uses the `null` or `undefined` as value are considered as empty points. The empty data points are ignored and not plotted in the Circular Chart 3D. You can customize those points, using the `emptyPointSettings` property in series. The default mode of the empty point is `Gap`. Other supported modes are `Average`, `Drop` and `Zero`.
+Data points containing `null` or `undefined` values are considered empty points. These empty data points are ignored and not plotted in the Circular Chart 3D. You can customize the handling of empty points using the `emptyPointSettings` property in the series. The default mode for empty points is `Gap`. Other supported modes include `Average`, `Drop` and `Zero`.
 
 {% if page.publishingplatform == "typescript" %}
 
