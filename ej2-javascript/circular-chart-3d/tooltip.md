@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tooltip in ##Platform_Name## 3D Circular Chart control | Syncfusion
-description: Learn here all about Tooltip in Syncfusion ##Platform_Name## 3D Circular Chart control of Syncfusion Essential JS 2 and more.
+description: Learn here all about tooltip in Syncfusion ##Platform_Name## 3D Circular Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Tooltip 
 publishingplatform: ##Platform_Name##
@@ -40,11 +40,11 @@ The 3D Circular Chart will display details about the points through a tooltip, w
 {% previewsample "page.domainurl/code-snippet/circular-chart/user-interaction/tooltip" %}
 {% endif %}
 
->Note: To use tooltip feature, inject the `CircularChartTooltip3D` using the `CircularChart3D.Inject(CircularChartTooltip3D)` method.
+>To use tooltip feature, inject the `CircularChartTooltip3D` using the `CircularChart3D.Inject(CircularChartTooltip3D)` method.
 
 ## Header
 
-We can specify a header for the tooltip by using the `header` property in `tooltip`.
+You can specify a header for the tooltip by using the `header` property in `tooltip`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -197,7 +197,7 @@ The `fill` and `border` properties are used to customize the background color an
 {% previewsample "page.domainurl/code-snippet/circular-chart/user-interaction/tooltip-custom" %}
 {% endif %}
 
-## To customize individual tooltip
+## Customization of individual tooltip
 
 Using the `tooltipRender` event, you can customize tooltip values for a particular point.
 

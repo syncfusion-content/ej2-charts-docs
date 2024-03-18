@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Pie and donut in ##Platform_Name## 3D Circular Chart control | Syncfusion
-description: Learn here all about Pie and donut in Syncfusion ##Platform_Name## 3D Circular Chart control of Syncfusion Essential JS 2 and more.
+title: Pie and Donut in ##Platform_Name## 3D Circular Chart control | Syncfusion
+description: Learn here all about Pie and Donut in Syncfusion ##Platform_Name## 3D Circular Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
-control: Pie and donut 
+control: Pie and Donut 
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pie and donut in ##Platform_Name## 3D Circular Chart control
+# Pie and Donut in ##Platform_Name## 3D Circular Chart control
 
 ## Pie chart
 
@@ -44,7 +44,7 @@ To render a pie series, inject the `PieSeries3D` module using `CircularChart3D.I
 
 ## Radius customization
 
-By default, the radius of the pie series will be 80% of the size (minimum of the circular chart width and height). You can customize this using the `radius` property of the series.
+By default, the radius of the pie series will be 80% of the size, which is the minimum of the 3D Circular Chart's width and height. You can customize this by using the `radius` property of the series.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -135,9 +135,9 @@ To achieve a donut in the pie series, customize the `innerRadius` property of th
 {% previewsample "page.domainurl/code-snippet/circular-chart/pie-donut/donut" %}
 {% endif %}
 
-## Color & text mapping
+## Text and fill color mapping
 
-The fill color and the text in the data source can be mapped to the 3D Circular Chart using `pointColorMapping` in the series and `name` in the datalabel, respectively.
+The text and the fill color from the data source can be mapped to the 3D Circular Chart using `pointColorMapping` in the series and `name` in the data label, respectively.
 
 {% if page.publishingplatform == "typescript" %}
 
