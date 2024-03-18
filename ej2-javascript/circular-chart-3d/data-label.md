@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data labels in ##Platform_Name## Circular Chart 3D control | Syncfusion
-description: Learn here all about Data labels in Syncfusion ##Platform_Name## Circular Chart 3D control of Syncfusion Essential JS 2 and more.
+title: Data labels in ##Platform_Name## 3D Circular Chart control | Syncfusion
+description: Learn here all about Data labels in Syncfusion ##Platform_Name## 3D Circular Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Data labels 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data labels in ##Platform_Name## Circular Chart 3D control
+# Data labels in ##Platform_Name## 3D Circular Chart control
 
-Data label refers to a label associated with specific data points. It can be added to a Circular Chart 3D series by enabling the `visible` option in the `dataLabel` property. By default, the labels will arrange smartly without overlapping.
+Data label refers to a label associated with specific data points. It can be added to a 3D Circular Chart series by enabling the `visible` option in the `dataLabel` property. By default, the labels will arrange smartly without overlapping.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,7 +44,7 @@ Data label refers to a label associated with specific data points. It can be add
 
 ## Positioning
 
-Using `position` property, we can place the data label either on `inside` or `outside` the Circular Chart 3D.
+Using `position` property, we can place the data label either on `inside` or `outside` the 3D Circular Chart.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -168,7 +168,7 @@ Text from the data source can be mapped using the `name` property in the data 
 
 ## Format
 
-The data label for the Circular Chart 3D can be formatted using the `format` property. You can utilize global formatting options, such as 'n', 'p', and 'c'.
+The data label for the 3D Circular Chart can be formatted using the `format` property. You can utilize global formatting options, such as 'n', 'p', and 'c'.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Legend in ##Platform_Name## Circular Chart 3D control | Syncfusion
-description: Learn here all about Legend in Syncfusion ##Platform_Name## Circular Chart 3D control of Syncfusion Essential JS 2 and more.
+title: Legend in ##Platform_Name## 3D Circular Chart control | Syncfusion
+description: Learn here all about Legend in Syncfusion ##Platform_Name## 3D Circular Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Legend 
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Legend in ##Platform_Name## Circular Chart 3D control
+# Legend in ##Platform_Name## 3D Circular Chart control
 
-Legend provides information about the series rendered in the Circular Chart 3D. It can be added by enabling the `visible` option in the `legendSettings` property.
+Legend provides information about the data points rendered in the 3D Circular Chart. It can be added by enabling the `visible` option in the `legendSettings` property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,7 +44,7 @@ Legend provides information about the series rendered in the Circular Chart 3D. 
 
 ## Position and alignment
 
-By using the `position` property, the legend can be positioned at the `left`, `right`, `top` or `bottom` of the Circular Chart 3D. By default, the legend will be positioned to the right of the Circular Chart 3D. Additionally, you can align the legend to the `center`,`far` or `near` of the chart using the `alignment` property. 
+By using the `position` property, the legend can be positioned at the `left`, `right`, `top` or `bottom` of the 3D Circular Chart. By default, the legend will be positioned to the right of the 3D Circular Chart. Additionally, you can align the legend to the `center`,`far` or `near` of the chart using the `alignment` property. 
  
 {% if page.publishingplatform == "typescript" %}
 
