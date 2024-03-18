@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Title and sub title in ##Platform_Name## Circular Chart 3D control | Syncfusion
-description: Learn here all about Title and sub title in Syncfusion ##Platform_Name## Circular Chart 3D control of Syncfusion Essential JS 2 and more.
+title: Title and sub title in ##Platform_Name## 3D Circular Chart control | Syncfusion
+description: Learn here all about Title and sub title in Syncfusion ##Platform_Name## 3D Circular Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Title and sub title 
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Title and sub title in ##Platform_Name## Circular Chart 3D control
+# Title and sub title in ##Platform_Name## 3D Circular Chart control
 
 ## Title
 
-The Circular Chart 3D can be given a title by using the `title` property to display information about the plotted data.
+The 3D Circular Chart can be given a title by using the `title` property to display information about the plotted data.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,7 +44,7 @@ The Circular Chart 3D can be given a title by using the `title` property to disp
 
 ## Title customization
 
-The title of the Circular Chart 3D can be customized using the `titleStyle` property.
+The title of the 3D Circular Chart can be customized using the `titleStyle` property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -75,7 +75,7 @@ The title of the Circular Chart 3D can be customized using the `titleStyle` prop
 
 ## Subtitle
 
-The Circular Chart 3D can be given a subtitle by using the `subTitle` property to display information about the plotted data.
+The 3D Circular Chart can be given a subtitle by using the `subTitle` property to display information about the plotted data.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -106,7 +106,7 @@ The Circular Chart 3D can be given a subtitle by using the `subTitle` property t
 
 ## Subtitle customization
 
-The subtitle of the Circular Chart 3D can be customized using the `subTitleStyle` property.
+The subtitle of the 3D Circular Chart can be customized using the `subTitleStyle` property.
 
 {% if page.publishingplatform == "typescript" %}
 
