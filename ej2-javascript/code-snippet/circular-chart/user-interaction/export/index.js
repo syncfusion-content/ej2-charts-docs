@@ -19,5 +19,5 @@ var circularchart = new ej.charts.CircularChart3D({
 }, '#element');
 
 document.getElementById('export').onclick = () => {
-    circularchart.export('PNG', 'result');
+    circularchart.circularChartExport3DModule.export('PNG', 'result');
 };
